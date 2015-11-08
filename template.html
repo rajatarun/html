@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="store">
+<head class="container">
+	<div ng-controller="CssController as css">
+ <link rel="stylesheet" type="text/css" ng-href="{{css.product.boot}}">
+ <link rel="stylesheet" type="text/css" ng-href="{{css.product.my}}">
+ 	</div>
+ <div class = "col-md-12 heading" ng-controller="HeadingController as head">
+ <hr>
+ <h1 class="mainheading">{{head.product.heading | uppercase}}</h1>
+ <hr>
+</div>
+</head>
+<body ng-controller="StoreController as store">
+<!-- start of nav bar -->
+
+<nav class="navbar mynav" ng-controller="NavController as nav">
+	<!-- / start collapsed navbar -->
+ 	<div class="navbar-header">
+        <button type="button" 
+                class="navbar-toggle collapsed" 
+                data-toggle="collapse" 
+                data-target = "#my_navbar" 
+                aria-expanded="false">
+          hello!
+        </button>
+    </div><!-- / collapsed navbar -->
+	<div class="collapse navbar-collapse" id= "my_navbar">
+        <ul class = "nav navbar-nav" ng-repeat="ls in nav.product">
+          <li class="active">
+            <a class="toplist" ng-href="{{ls.url}}">{{ls.name}}</a>
+          </li>
+        </ul>
+    </div>
+</nav>
+<!-- end of nav bar -->
+<!-- start of breadcrumb -->
+<div class="container" >
+        <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+    	</ol>
+</div>
+<!-- end of breadcrumb -->
+
+
+
+
+
+
+
+
+
+
+<!-- start of footer -->
+<hr>
+<footer class = "footer footer-default" ng-controller="FooterNavController as footnav">
+	<ul class = "nav navbar-nav" ng-repeat="ls in footnav.product">
+		<li>
+			<a ng-href="{{ls.url}}">{{ls.name}}</a>
+		</li>
+	</ul>
+</footer>
+<!-- end of footer -->
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+</body>
+
+
+</html>

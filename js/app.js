@@ -98,6 +98,15 @@
 	var contact ={
 
 	};
+	var articles = [
+		{
+			img:"http://graphics8.nytimes.com/images/2015/11/06/us/00mississippi3/00mississippi3-sfSpan.jpg",
+			des:"With the closing of the polls on Tuesday night, what could turn out to be last battle over the Confederate battle flag in Mississippi has begun in earnest."
+		}	
+	];
+	app.controller("ArticleController",function(){
+		this.product= articles;
+	});
 	app.controller("ContactController",function(){
 		this.product = contact;
 	});

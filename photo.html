@@ -45,7 +45,7 @@
 <div ng-controller = "PhotoController as pic" >
     <div class= "row gallery">
     <div ng-repeat = "p in pic.product | limitTo:3">
-    <a ng-href={{p.url}}><img class="col-md-4" ng-src={{p.url}}></a>
+    <a ng-href={{p.url}}><img class="col-md-4 photos" ng-src={{p.url}}></a>
     </div>
     </div>
 </div>

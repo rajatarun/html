@@ -10,7 +10,7 @@ a.toplist{
 	font-family: verdana;
 	font-size: 20px;
 }
-img{
+img.photos{
 	
 	width: 30%;
 	transform:rotate(90deg);

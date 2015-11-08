@@ -42,7 +42,23 @@
 </div>
 <!-- end of breadcrumb -->
 
+<div  ng-controller="ArticleController as art">
+    <div ng-repeat = "a in art.product">
+        <div class = "row">
+            <div class="col-md-1">
 
+            </div>
+            <div class="col-md-4">
+                <a ng-href={{a.img}}><img ng-src="{{a.img}}"></a>
+            </div>
+            <div class="col-md-5">
+                <article>
+                    {{a.des}}
+                </article>    
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
