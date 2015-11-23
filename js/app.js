@@ -61,17 +61,17 @@
 	var photos = [
 		{
 			name:"nature1",
-			url:"https://s3.amazonaws.com/tarunblog/rsz_nature1.jpg"
+			url:"https://s3.amazonaws.com/tarunblog/nature1.JPG"
 
 		},
 		{
 			name:"nature2",
-			url:"https://s3.amazonaws.com/tarunblog/rsz_nature2.jpg"
+			url:"https://s3.amazonaws.com/tarunblog/nature2.JPG"
 
 		},
 		{
 			name:"nature3",
-			url:"https://s3.amazonaws.com/tarunblog/rsz_nature3.jpg"
+			url:"https://s3.amazonaws.com/tarunblog/nature3.JPG"
 
 		},
 		{
@@ -93,7 +93,17 @@
 			name:"nature7",
 			url:"https://s3.amazonaws.com/tarunblog/nature7.JPG"
 
-		}						
+		},
+		{
+			name:"nature8",
+			url:"https://s3.amazonaws.com/tarunblog/nature8.JPG"
+
+		},
+		{
+			name:"nature9",
+			url:"https://s3.amazonaws.com/tarunblog/nature9.JPG"
+
+		}																		
 	];
 	var mydata = {
 		name: "Tarun Raja",

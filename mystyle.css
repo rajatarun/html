@@ -12,19 +12,22 @@ a.toplist{
 }
 img.photos{
 	
-	width: 30%;
+	
 	transform:rotate(90deg);
 }
 .imgart{
 	padding-bottom: 5px;
 }
 .gallery{
+	margin-right: 40px;
 	padding-right: 10px;
-	padding-left: 10px;
+	padding-left: 110px;
 	padding-top: 50px;
+	padding-bottom: 100px;
+
 }
 .mypicture{
-	padding-left: 50px;
+	padding-left: 120px;
 
 }
 @font-face {
