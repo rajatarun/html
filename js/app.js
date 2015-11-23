@@ -66,12 +66,12 @@
 		},
 		{
 			name:"nature2",
-			url:"https://s3.amazonaws.com/tarunblog/rsz_nature2.JPG"
+			url:"https://s3.amazonaws.com/tarunblog/rsz_nature2.jpg"
 
 		},
 		{
 			name:"nature3",
-			url:"https://s3.amazonaws.com/tarunblog/rsz_nature3.JPG"
+			url:"https://s3.amazonaws.com/tarunblog/rsz_nature3.jpg"
 
 		},
 		{
