@@ -95,6 +95,12 @@
 
 		}						
 	];
+	var mydata = {
+		name: "Tarun Raja",
+		college : "SUNY Binghamton",
+		mypic :"https://s3.amazonaws.com/tarunblog/mypic.jpg"
+
+	};
 	var contact ={
 
 	};
@@ -104,6 +110,19 @@
 			des:"With the closing of the polls on Tuesday night, what could turn out to be last battle over the Confederate battle flag in Mississippi has begun in earnest."
 		}	
 	];
+	var mywork = {
+		email:"rajatarun12@gamil.com",
+		linkedin:"https://www.linkedin.com/in/tarunraja1",
+		github:"https://github.com/rajatarun",
+		facebook:"https://www.facebook.com/studentconnect"
+	};
+
+	app.controller("MyWorkController",function(){
+		this.product = mywork;
+	});
+	app.controller("MyDataController",function(){
+		this.product = mydata;
+	});
 	app.controller("ArticleController",function(){
 		this.product= articles;
 	});

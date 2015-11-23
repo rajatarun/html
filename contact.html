@@ -42,7 +42,46 @@
     	</ol>
 </div>
 <!-- end of breadcrumb -->
+<div ng-controller="MyWorkController as mywork">
+    <div class="row">
+    <div class="col-md-6">
 
+    </div>
+    <div class="col-md-4">
+    <table>
+        <tr>
+            <td>
+                <h4>
+                    EMail: <a href="{{mywork.product.email}}">{{mywork.product.email}}</a>
+                </h4>   
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4>
+                    Linkedin: <a href="{{mywork.product.linkedin}}">{{mywork.product.linkedin}}</a>
+                </h4>
+            </td>
+        </tr>   
+        <tr>
+            <td>
+                <h4>
+                    GitHub: <a href="{{mywork.product.github}}">{{mywork.product.github}}</a>
+                </h4>   
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4>
+                    Facebook: <a href="{{mywork.product.facebook}}">{{mywork.product.facebook}}</a>
+                </h4>   
+            </td>
+        </tr>
+
+    </table>
+    </div>
+    </div>
+</div>
 
 
 

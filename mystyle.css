@@ -20,6 +20,10 @@ img.photos{
 	padding-left: 10px;
 	padding-top: 50px;
 }
+.mypicture{
+	padding-left: 50px;
+
+}
 @font-face {
    font-family: myFirstFont;
    src: url(Monoton-Regular.ttf);
