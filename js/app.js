@@ -61,37 +61,37 @@
 	var photos = [
 		{
 			name:"nature1",
-			url:"images/nature1.jpg"
+			url:"https://s3.amazonaws.com/tarunblog/rsz_nature1.jpg"
 
 		},
 		{
 			name:"nature2",
-			url:"images/nature2.jpg"
+			url:"https://s3.amazonaws.com/tarunblog/rsz_nature2.JPG"
 
 		},
 		{
 			name:"nature3",
-			url:"images/nature3.jpg"
+			url:"https://s3.amazonaws.com/tarunblog/rsz_nature3.JPG"
 
 		},
 		{
 			name:"nature4",
-			url:"images/nature4.jpg"
+			url:"https://s3.amazonaws.com/tarunblog/nature4.JPG"
 
 		},
 		{
 			name:"nature5",
-			url:"images/nature5.jpg"
+			url:"https://s3.amazonaws.com/tarunblog/nature5.JPG"
 
 		},
 		{
 			name:"nature6",
-			url:"images/nature6.jpg"
+			url:"https://s3.amazonaws.com/tarunblog/nature6.JPG"
 
 		},	
 		{
 			name:"nature7",
-			url:"images/nature7.jpg"
+			url:"https://s3.amazonaws.com/tarunblog/nature7.JPG"
 
 		}						
 	];
