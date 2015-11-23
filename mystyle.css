@@ -15,6 +15,9 @@ img.photos{
 	width: 30%;
 	transform:rotate(90deg);
 }
+.imgart{
+	padding-bottom: 5px;
+}
 .gallery{
 	padding-right: 10px;
 	padding-left: 10px;
@@ -27,4 +30,7 @@ img.photos{
 @font-face {
    font-family: myFirstFont;
    src: url(Monoton-Regular.ttf);
+}
+.newsarticle{
+	border-right: thin solid grey;
 }

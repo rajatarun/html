@@ -47,11 +47,15 @@
     <div class="col-xs-1 col-md-1">
 
     </div>
-    <div class= "col-xs-11 col-md-11">
+    <div class= "col-xs-5 col-md-5">
         <h3>News Articles</h3>
     </div>
+    <div class= "col-xs-5 col-md-5">
+        <h3>Career Articles</h3>
+    </div>
 </div>
-<div ng-controller = "NewsController as NC">
+<div ng-controller = "NewsController as nc" >
+    <div class="row">
     <div ng-repeat="x in data.results" class="row articles">
         <div class="col-xs-1 col-md-1">
 
@@ -60,13 +64,20 @@
             <img ng-src="{{x.multimedia[1].url}}" width="100%" height = "100%">
             
         </div>
-        <div class = "col-md-6 col-xs-6">
+        <div class = "col-md-3 col-xs-3 newsarticle" >
             <h4><a ng-href="{{x.url}}">{{x.title | uppercase}}</a></h4>
             <p>{{x.abstract}}</p>
+        </div>
+        <div class = "col-md-4 col-xs-4 careerart"  >
+            <h4><a ng-href="{{nc.product[data.results.indexOf(x)].url}}">{{nc.product[data.results.indexOf(x)].title | uppercase}}</a></h4>
+            <p>{{nc.product[data.results.indexOf(x)].content}}</p>
+
         </div>
         <div class="col-md-1 col-xs-1">
 
         </div>
+    </div>
+    </div>
     </div>
 </div>
 <!-- News Article End-->
