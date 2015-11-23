@@ -117,6 +117,11 @@
 		facebook:"https://www.facebook.com/studentconnect"
 	};
 
+	app.controller("NewsController",function($scope,$http){
+		$http.get("http://api.nytimes.com/svc/news/v3/content/all/U.S./1.json?limit=3&api-key=14ffa0c3d5869d898956dbae65bd5601%3A4%3A72071069")
+   		.success(function (response) {$scope.names = response.records;
+   			$scope.data = response;});
+	});
 	app.controller("MyWorkController",function(){
 		this.product = mywork;
 	});

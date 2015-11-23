@@ -42,24 +42,35 @@
 </div>
 <!-- end of breadcrumb -->
 
-<div  ng-controller="ArticleController as art">
-    <div ng-repeat = "a in art.product">
-        <div class = "row">
-            <div class="col-md-1">
+<!-- News Article Start-->
+<div class= "row">
+    <div class="col-md-1">
 
-            </div>
-            <div class="col-md-4">
-                <a ng-href={{a.img}}><img ng-src="{{a.img}}"></a>
-            </div>
-            <div class="col-md-5">
-                <article>
-                    {{a.des}}
-                </article>
-                    
-            </div>
+    </div>
+    <div class= "col-md-11">
+        <h3>News Articles</h3>
+    </div>
+</div>
+<div ng-controller = "NewsController as NC">
+    <div ng-repeat="x in data.results" class="row articles">
+        <div class="col-xs-1 col-md-1">
+
+        </div>
+        <div class="col-xs-2 col-md-2 imgart">
+            <img ng-src="{{x.multimedia[1].url}}" width="100%" height = "100%">
+            <caption>{{x.multimedia[1].caption}}</caption>
+        </div>
+        <div class = "col-md-6 col-xs-6">
+            <h4><a ng-href="{{x.url}}">{{x.title | uppercase}}</a></h4>
+            <p>{{x.abstract}}</p>
+        </div>
+        <div class="col-md-1 col-xs-1">
+
         </div>
     </div>
 </div>
+<!-- News Article End-->
+
 
 
 
