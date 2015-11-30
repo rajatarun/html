@@ -6,15 +6,24 @@
  <link rel="stylesheet" type="text/css" ng-href="{{css.product.boot}}">
  <link rel="stylesheet" type="text/css" ng-href="{{css.product.my}}">
  	</div>
+    <!-- font controller start -->
+    <div ng-controller="FontController as fc">
+    <link ng-href={{fc.product}} rel='stylesheet' type='text/css'>
+    </div>
+    <div ng-controller="BodyFontController as fc">
+    <link ng-href={{fc.product.fh}} rel='stylesheet' type='text/css'>
+    <link ng-href={{fc.product.ff}} rel='stylesheet' type='text/css'>
+    </div>
+<!-- font controller end -->
  <div class = "col-md-12 heading" ng-controller="HeadingController as head">
  <hr>
  <h1 class="mainheading">{{head.product.heading | uppercase}}</h1>
  <hr>
 </div>
 </head>
-<body ng-controller="StoreController as store">
+<body ng-controller="StoreController as store" >
 <!-- start of nav bar -->
-
+<div class="body">
 <nav class="navbar mynav" ng-controller="NavController as nav">
 	<!-- / start collapsed navbar -->
  	<div class="navbar-header">
@@ -69,7 +78,7 @@
         
     </div>
 </div>
-
+</div>
 
 
 
@@ -81,13 +90,17 @@
 
 <!-- start of footer -->
 <hr>
-<footer class = "footer footer-default" ng-controller="FooterNavController as footnav">
-	<ul class = "nav navbar-nav" ng-repeat="ls in footnav.product">
-		<li>
-			<a ng-href="{{ls.url}}">{{ls.name}}</a>
-		</li>
-	</ul>
+
+<footer class = "panel-footer footer-default backfoot"  ng-controller="FooterNavController as footnav">
+    <div class="row nav-bar-custom">
+    <ul class = "nav navbar-nav nav-bar-custom" ng-repeat="ls in footnav.product">
+        <li>
+            <a ng-href="{{ls.url}}">{{ls.name}}</a>
+        </li>
+    </ul>
+    </div>
 </footer>
+
 <!-- end of footer -->
 <script type="text/javascript" src="js/angular.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>

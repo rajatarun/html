@@ -139,8 +139,26 @@
 			des:"With the closing of the polls on Tuesday night, what could turn out to be last battle over the Confederate battle flag in Mississippi has begun in earnest."
 		}	
 	];
+	var fonts = ["https://fonts.googleapis.com/css?family=Pacifico", 
+					"https://fonts.googleapis.com/css?family=Arizonia",
+					"https://fonts.googleapis.com/css?family=Great+Vibes",
+					"https://fonts.googleapis.com/css?family=Monoton",
+					"https://fonts.googleapis.com/css?family=Londrina+Solid",
+					"https://fonts.googleapis.com/css?family=Raleway",
+					"https://fonts.googleapis.com/css?family=Bubblegum+Sans",
+					"https://fonts.googleapis.com/css?family=Spinnaker",
+					];
+	var fonts1 = {   "fa":"https://fonts.googleapis.com/css?family=Pacifico", 
+					"fb":"https://fonts.googleapis.com/css?family=Arizonia",
+					"fc":"https://fonts.googleapis.com/css?family=Great+Vibes",
+					"fd":"https://fonts.googleapis.com/css?family=Monoton",
+					"fe":"https://fonts.googleapis.com/css?family=Londrina+Solid",
+					"ff":"https://fonts.googleapis.com/css?family=Raleway",
+					"fg":"https://fonts.googleapis.com/css?family=Bubblegum+Sans",
+					"fh":"https://fonts.googleapis.com/css?family=Spinnaker",
+					};
 	var mywork = {
-		email:"rajatarun12@gamil.com",
+		email:"rajatarun12@gmail.com",
 		linkedin:"https://www.linkedin.com/in/tarunraja1",
 		github:"https://github.com/rajatarun",
 		facebook:"https://www.facebook.com/studentconnect"
@@ -158,6 +176,12 @@
    		.success(function (response) {
    			$scope.data = response;});
    		this.product = "http://www.youtube.com/embed/";
+	});
+	app.controller("FontController",function(){
+		this.product = fonts[Math.floor((Math.random() * fonts.length))];
+	});
+	app.controller("BodyFontController",function(){
+		this.product = fonts1;
 	});
 	app.controller("MyWorkController",function(){
 		this.product = mywork;

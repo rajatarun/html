@@ -1,10 +1,20 @@
 .heading{
 	text-align: center;
-
+	background-color: #261a0d;
+}
+.backfoot{
+	background-color: #261a0d;
+	
+	
+}
+.nav-bar-custom{
+	background-color: #261a0d;
+	color: white;
 }
 h1.mainheading{
 	font-size: 100px;
-	font-family: myFirstFont;
+	font-family: 'Bubblegum Sans','Londrina Solid','Arizonia',myFirstFont;
+	color: white;
 }
 a.toplist{
 	font-family: verdana;
@@ -25,6 +35,12 @@ img.photos{
 	padding-top: 50px;
 	padding-bottom: 100px;
 
+}
+.body{
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJklEQVQYV2O0OX0hjYGBgeGIqcEsEI0LMBKtEJ8pyHKMowrxhQAABu0ICyhJAG0AAAAASUVORK5CYII=) repeat;
+}
+h4{
+	font-family: 'Raleway';
 }
 .mypicture{
 	padding-left: 120px;
@@ -49,4 +65,7 @@ hr.bodyhr1{
 }
 div.pad{
 	padding-bottom: 20px;
+}
+p{
+	font-family: 'Spinnaker';
 }

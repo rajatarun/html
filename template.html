@@ -5,13 +5,20 @@
  <link rel="stylesheet" type="text/css" ng-href="{{css.product.boot}}">
  <link rel="stylesheet" type="text/css" ng-href="{{css.product.my}}">
  	</div>
+    <div ng-controller="FontController as fc">
+    <link ng-href={{fc.product}} rel='stylesheet' type='text/css'>
+    </div>
+    <div ng-controller="BodyFontController as fc">
+    <link ng-href={{fc.product.fh}} rel='stylesheet' type='text/css'>
+    <link ng-href={{fc.product.ff}} rel='stylesheet' type='text/css'>
+    </div>
  <div class = "col-md-12 heading" ng-controller="HeadingController as head">
  <hr>
  <h1 class="mainheading">{{head.product.heading | uppercase}}</h1>
  <hr>
 </div>
 </head>
-<body ng-controller="StoreController as store">
+<body ng-controller="StoreController as store" class = "body">
 <!-- start of nav bar -->
 
 <nav class="navbar mynav" ng-controller="NavController as nav">
@@ -53,6 +60,7 @@
 
 <!-- start of footer -->
 <hr>
+<div class="backfoot">
 <footer class = "footer footer-default" ng-controller="FooterNavController as footnav">
 	<ul class = "nav navbar-nav" ng-repeat="ls in footnav.product">
 		<li>
@@ -60,6 +68,7 @@
 		</li>
 	</ul>
 </footer>
+</div>
 <!-- end of footer -->
 <script type="text/javascript" src="js/angular.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
