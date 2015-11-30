@@ -158,9 +158,7 @@
 		$http.get("https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,player,statistics&chart=mostPopular&key=AIzaSyDjP5XAHXD4VfjbfpAzK5n3RB5sp0xl7KM")
    		.success(function (response) {$scope.names = response.records;
    			$scope.data = response;});
-   		 $scope.GetIframe = function(html) {
-          return $sce.trustAsHtml(html);
-        };
+   		 
 
 	});
 	app.controller("MyWorkController",function(){
