@@ -37,3 +37,16 @@ img.photos{
 .newsarticle{
 	border-right: thin solid grey;
 }
+hr.bodyhr{
+	height: 0;
+	width: 85%;
+	border: thin solid grey;
+}
+hr.bodyhr1{
+	height: 0;
+	width: 84%;
+	border: thin solid grey;
+}
+div.pad{
+	padding-bottom: 20px;
+}

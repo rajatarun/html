@@ -1,6 +1,8 @@
 (function(){
 	var app = angular.module("store",[]);
-
+	app.config(['$sceProvider',function($sceProvider){
+    $sceProvider.enabled(false);
+	}]);
 	var css1 = {
 		boot:"bootstrap.min.css",
 		my:"mystyle.css"
@@ -149,6 +151,16 @@
    		.success(function (response) {$scope.names = response.records;
    			$scope.data = response;});
    		this.product = career;
+
+	});
+	app.controller("VideoController",function($scope,$http){
+		this.product = "http://www.youtube.com/embed/";
+		$http.get("https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,player,statistics&chart=mostPopular&key=AIzaSyDjP5XAHXD4VfjbfpAzK5n3RB5sp0xl7KM")
+   		.success(function (response) {$scope.names = response.records;
+   			$scope.data = response;});
+   		 $scope.GetIframe = function(html) {
+          return $sce.trustAsHtml(html);
+        };
 
 	});
 	app.controller("MyWorkController",function(){

@@ -64,12 +64,12 @@
         <div class="col-xs-2 col-md-2 imgart">
             <img ng-src="{{x.multimedia[1].url}}" width="100%" height = "100%">
             
-        </div>
+        </div>  
         <div class = "col-md-3 col-xs-3 newsarticle" >
             <h4><a ng-href="{{x.url}}">{{x.title | uppercase}}</a></h4>
             <p>{{x.abstract}}</p>
         </div>
-        <div class = "col-md-4 col-xs-4 careerart"  >
+        <div class = "col-md-5 col-xs-5 careerart"  >
             <h4><a ng-href="{{nc.product[data.results.indexOf(x)].url}}">{{nc.product[data.results.indexOf(x)].title | uppercase}}</a></h4>
             <p>{{nc.product[data.results.indexOf(x)].content}}</p>
 
@@ -82,12 +82,71 @@
     </div>
 </div>
 <!-- News Article End-->
+<!--Videos Start -->
+<hr class="bodyhr">
 
+    <div class="row">
+        <div class="col-xs-1 col-md-1">
 
+        </div>
+        <div class="col-xs-10 col-md-10">
+        <h3>Popular Videos</h3>
+        </div>
+        <div class="col-xs-1 col-md-1">
 
+        </div>
+    </div>
+<div ng-controller = "VideoController as vc" >    
+    <div ng-repeat="x in data.items ">
+    <div class="row">
+        <div class="col-xs-1 col-md-1">
 
+        </div>
+        <div class="col-xs-10 col-md-10">
+        <h4><a ng-href="{{x.snippet.thumbnails.medium.url}}">{{x.snippet.title | uppercase}}</a></h4>
+        </div>
+        <div class="col-xs-1 col-md-1">
 
+        </div>
+    </div>
+    <div class="row">
+    <div class="articles pad">
+        <div class="col-xs-1 col-md-1">
 
+        </div>
+        
+        <div class="col-xs-3 col-md-3">
+            
+            <iframe width="320" height="180" ng-src="{{vc.product.concat(x.id)}}"> </iframe>
+            
+        </div>
+        <div class="col-xs-7 col-md-7">
+            <p>{{x.snippet.localized.description.split('.')[0]}}</p> 
+        </div>
+        <div class="col-xs-1 col-md-1">
+           
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1 col-md-1">
+
+        </div>
+        <div class="col-xs-1 col-md-1">
+        <img src="images/views.png">{{x.statistics.viewCount}}</img>
+        </div>
+        <div class="col-xs-1 col-md-1">
+        <img src="images/likes.png">{{x.statistics.likeCount}}</img>
+        </div>
+        <div class="col-xs-9 col-md-9">
+
+        </div>
+    </div>
+    
+    <hr class="bodyhr1">
+    </div>
+</div>
+<!--Videos End -->
 
 
 
