@@ -1,6 +1,8 @@
 (function(){
 	var app = angular.module("store",[]);
-	
+	app.config(['$sceProvider',function($sceProvider){
+    $sceProvider.enabled(false);
+	}]);
 	var css1 = {
 		boot:"bootstrap.min.css",
 		my:"mystyle.css"
@@ -152,10 +154,11 @@
 
 	});
 	app.controller("VideoController",function($scope,$http){
-		this.product = "http://www.youtube.com/embed/";
+		
 		$http.get("https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,player,statistics&chart=mostPopular&key=AIzaSyDjP5XAHXD4VfjbfpAzK5n3RB5sp0xl7KM")
    		.success(function (response) {
    			$scope.data = response;});
+   		this.product = "http://www.youtube.com/embed/";
 	});
 	app.controller("MyWorkController",function(){
 		this.product = mywork;
