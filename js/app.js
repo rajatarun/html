@@ -1,8 +1,6 @@
 (function(){
 	var app = angular.module("store",[]);
-	app.config(['$sceProvider',function($sceProvider){
-    $sceProvider.enabled(false);
-	}]);
+	
 	var css1 = {
 		boot:"bootstrap.min.css",
 		my:"mystyle.css"
