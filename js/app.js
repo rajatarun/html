@@ -154,7 +154,6 @@
 
 	});
 	app.controller("VideoController",function($scope,$http){
-		
 		$http.get("https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,player,statistics&chart=mostPopular&key=AIzaSyDjP5XAHXD4VfjbfpAzK5n3RB5sp0xl7KM")
    		.success(function (response) {
    			$scope.data = response;});
