@@ -156,10 +156,8 @@
 	app.controller("VideoController",function($scope,$http){
 		this.product = "http://www.youtube.com/embed/";
 		$http.get("https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,player,statistics&chart=mostPopular&key=AIzaSyDjP5XAHXD4VfjbfpAzK5n3RB5sp0xl7KM")
-   		.success(function (response) {$scope.names = response.records;
+   		.success(function (response) {
    			$scope.data = response;});
-   		 
-
 	});
 	app.controller("MyWorkController",function(){
 		this.product = mywork;
