@@ -3,10 +3,10 @@
 <head class="container">
     <link rel="shortcut icon" href="favicon.ico">
     <title>TARUNBLOG</title>
-    <div ng-controller="CssController as css">
+	<div ng-controller="CssController as css">
  <link rel="stylesheet" type="text/css" ng-href="{{css.product.boot}}">
  <link rel="stylesheet" type="text/css" ng-href="{{css.product.my}}">
-    </div>
+ 	</div>
     <!-- font controller start -->
     <div ng-controller="FontController as fc">
     <link ng-href={{fc.product}} rel='stylesheet' type='text/css'>
@@ -27,8 +27,8 @@
 <!-- start of nav bar -->
 <div class="body">
 <nav class="navbar mynav" ng-controller="NavController as nav">
-    <!-- / start collapsed navbar -->
-    <div class="navbar-header">
+	<!-- / start collapsed navbar -->
+ 	<div class="navbar-header">
         <button type="button" 
                 class="navbar-toggle collapsed" 
                 data-toggle="collapse" 
@@ -37,7 +37,7 @@
           hello!
         </button>
     </div><!-- / collapsed navbar -->
-    <div class="collapse navbar-collapse" id= "my_navbar">
+	<div class="collapse navbar-collapse" id= "my_navbar">
         <ul class = "nav navbar-nav" ng-repeat="ls in nav.product">
           <li class="active contact">
             <a class="toplist" ng-href="{{ls.url}}">{{ls.name}}</a>
@@ -51,7 +51,7 @@
         <ol class="breadcrumb">
             <li><a href="index.html">Home</a></li>
             <li><a href="blog.html">Blog</a></li>
-        </ol>
+    	</ol>
 </div>
 <!-- end of breadcrumb -->
 

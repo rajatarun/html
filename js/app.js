@@ -39,6 +39,9 @@
 		{
 			name:"Contact",
 			url : "contact.html"
+		},{
+			name:"Blog",
+			url : "blog.html"
 		}
 		];
 	var footnav =[
@@ -58,6 +61,9 @@
 		{
 			name:"Contact",
 			url : "contact.html"
+		},{
+			name:"Blog",
+			url : "blog.html"
 		}
 		];
 	var photos = [

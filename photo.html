@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="store">
 <head class="container">
+    <link rel="shortcut icon" href="favicon.ico">
     <title>TARUNBLOG</title>
 	<div ng-controller="CssController as css">
  <link rel="stylesheet" type="text/css" ng-href="{{css.product.boot}}">
@@ -55,7 +56,7 @@
 <div ng-controller = "PhotoController as pic" >
     <div class= "row gallery">
         <div ng-repeat = "p in pic.product | limitTo:3">
-            <div class="col-xs-2 col-md-3 photos">
+            <div class="col-xs-1 col-md-3 photos">
                 <a ng-href={{p.url}}><img ng-src={{p.url}} width="100%" height="100%"></a>
             </div>
             <div class="col-xs-1 col-md-1 photos">
@@ -66,7 +67,7 @@
     </div>
     <div class= "row gallery">
         <div ng-repeat = "p in [pic.product[3],pic.product[4],pic.product[5]] | limitTo:3">
-            <div class="col-xs-2 col-md-3 photos">
+            <div class="col-xs-1 col-md-3 photos">
                 <a ng-href={{p.url}}><img  ng-src={{p.url}} width="100%" height="100%"></a>
             </div>
             <div class="col-xs-1 col-md-1 photos">
@@ -78,7 +79,7 @@
     </div>
     <div class= "row gallery">
         <div ng-repeat = "p in [pic.product[6],pic.product[7],pic.product[8]] | limitTo:3">
-            <div class="col-xs-2 col-md-3 photos">
+            <div class="col-xs-1 col-md-3 photos">
                 <a ng-href={{p.url}}><img  ng-src={{p.url}} width="100%" height="100%"></a>
             </div>
             <div class="col-xs-1 col-md-1 photos">
