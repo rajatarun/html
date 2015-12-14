@@ -163,10 +163,10 @@
 <!-- start of footer -->
 <hr>
 
-<footer class = "panel-footer footer-default backfoot"  ng-controller="FooterNavController as footnav">
+<footer class = "panel-footer footer-default backfoot index"  ng-controller="FooterNavController as footnav">
     <div class="row nav-bar-custom">
-    <ul class = "nav navbar-nav nav-bar-custom" ng-repeat="ls in footnav.product">
-        <li>
+    <ul class = "nav navbar-nav nav-bar-custom index" ng-repeat="ls in footnav.product">
+        <li class = "footerlist">
             <a ng-href="{{ls.url}}">{{ls.name}}</a>
         </li>
     </ul>
