@@ -156,6 +156,7 @@
 					"ff":"https://fonts.googleapis.com/css?family=Raleway",
 					"fg":"https://fonts.googleapis.com/css?family=Bubblegum+Sans",
 					"fh":"https://fonts.googleapis.com/css?family=Spinnaker",
+					"fi":"https://fonts.googleapis.com/css?family=Roboto+Condensed"
 					};
 	var mywork = {
 		email:"rajatarun12@gmail.com",
@@ -179,7 +180,7 @@
 	});
 	app.controller("FontController",function(){
 		//this.product = fonts[Math.floor((Math.random() * fonts.length))];
-		this.product = fonts1.fa;
+		this.product = fonts1.fi;
 	});
 	app.controller("BodyFontController",function(){
 		this.product = fonts1;
