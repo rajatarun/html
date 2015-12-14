@@ -16,7 +16,7 @@
     <link ng-href={{fc.product.ff}} rel='stylesheet' type='text/css'>
     </div>
 <!-- font controller end -->
- <div class = "col-md-12 heading" ng-controller="HeadingController as head">
+ <div class = "col-md-12 heading index" ng-controller="HeadingController as head">
  <hr>
  <h1 class="mainheading">{{head.product.heading | uppercase}}</h1>
  <hr>
@@ -38,7 +38,7 @@
     </div><!-- / collapsed navbar -->
 	<div class="collapse navbar-collapse" id= "my_navbar">
         <ul class = "nav navbar-nav" ng-repeat="ls in nav.product">
-          <li class="active">
+          <li class="active index">
             <a class="toplist" ng-href="{{ls.url}}">{{ls.name}}</a>
           </li>
         </ul>

@@ -178,7 +178,8 @@
    		this.product = "http://www.youtube.com/embed/";
 	});
 	app.controller("FontController",function(){
-		this.product = fonts[Math.floor((Math.random() * fonts.length))];
+		//this.product = fonts[Math.floor((Math.random() * fonts.length))];
+		this.product = fonts1.fa;
 	});
 	app.controller("BodyFontController",function(){
 		this.product = fonts1;

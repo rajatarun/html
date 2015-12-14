@@ -1,6 +1,18 @@
-.heading{
+.heading.index{
 	text-align: center;
-	background-color: #261a0d;
+	background-color: #4285F4;
+}
+.heading.about{
+	text-align: center;
+	background-color: #0F9D58;
+}
+.heading.contact{
+	text-align: center;
+	background-color: #F4BA15;
+}
+.heading.photo{
+	text-align: center;
+	background-color: #EA4335;
 }
 .backfoot{
 	background-color: #261a0d;
@@ -20,6 +32,22 @@ a.toplist{
 	font-family: verdana;
 	font-size: 20px;
 }
+.active.index a:hover{
+	background-color: #4285F4;
+	color: white;
+}
+.active.about a:hover{
+	background-color: #0F9D58;
+	color: white;
+}
+.active.photo a:hover{
+	background-color: #EA4335;
+	color: white;
+}
+.active.contact a:hover{
+	background-color: #F4BA15;
+	color: white;
+}
 img.photos{
 	
 	
@@ -37,7 +65,8 @@ img.photos{
 
 }
 .body{
-	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJklEQVQYV2O0OX0hjYGBgeGIqcEsEI0LMBKtEJ8pyHKMowrxhQAABu0ICyhJAG0AAAAASUVORK5CYII=) repeat;
+	/*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJklEQVQYV2O0OX0hjYGBgeGIqcEsEI0LMBKtEJ8pyHKMowrxhQAABu0ICyhJAG0AAAAASUVORK5CYII=) repeat;*/
+	background-color: #EEEEEE;
 }
 h4{
 	font-family: 'Raleway';
