@@ -107,7 +107,7 @@
         </div>
     </div>
 <div ng-controller = "VideoController as vc" >    
-    <div ng-repeat="x in data.items ">
+    <div ng-repeat="x in data.items | limitTo:3">
     <div class="row">
         <div class="col-xs-1 col-md-1">
 
