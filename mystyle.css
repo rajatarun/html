@@ -1,5 +1,5 @@
 @media (min-width: 1600px) {
-
+	
 	.heading.index {
 		text-align: center;
 		background-color: #4285F4
@@ -109,7 +109,7 @@
 	}
 }
 @media (min-width: 1400px) and (max-width: 1600px) {
-
+	
 	.heading.index {
 		text-align: center;
 		background-color: #4285F4
@@ -220,7 +220,7 @@
 	}
 }
 @media (min-width: 1000px) and (max-width: 1400px) {
-
+	
 	.heading.index {
 		text-align: center;
 		background-color: #4285F4
@@ -309,26 +309,20 @@
 	hr.bodyhr {
 		height: 0;
 		width: 85%;
-		border: thin solid grey
+		border: thin solid grey;
 	}
 	hr.bodyhr1 {
 		height: 0;
 		width: 84%;
-		border: thin solid grey
+		border: thin solid grey;
 	}
 	div.pad {
-		padding-bottom: 20px
+		padding-bottom: 20px;
 	}
 	p {
-		font-family: 'Spinnaker'
+		font-family: 'Spinnaker';
 	}
-	.photos {
-		width: 180px;
-		height:180px;
-		background-position: center center;
-		background-repeat: no-repeat;
-		transform: rotate(90deg)
-	}
+	
 }
 
 @media (min-width: 750px) and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -434,12 +428,6 @@
 	p {
 		font-family: 'Spinnaker'
 	}
-	.photos {
-		width: 150px;
-		height:150px;
-		background-position: center center;
-		background-repeat: no-repeat;
-		transform: rotate(90deg)
-	}
+	
 
 }	
