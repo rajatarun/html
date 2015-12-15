@@ -4,7 +4,7 @@
     $sceProvider.enabled(false);
 	}]);
 	var css1 = {
-		boot:"bootstrap.min.css",
+		boot:"bower_components/bootstrap/dist/css/bootstrap.min.css",
 		my:"mystyle.css"
 	};
 	var gem = [
