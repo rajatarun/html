@@ -2,54 +2,54 @@
 <html ng-app="store">
 <head class="container">
     <title>TARUNBLOG</title>
-	<div ng-controller="CssController as css">
- <link rel="stylesheet" type="text/css" ng-href="{{css.product.boot}}">
- <link rel="stylesheet" type="text/css" ng-href="{{css.product.my}}">
+    <div ng-controller="CssController as css">
+       <link rel="stylesheet" type="text/css" ng-href="{{css.product.boot}}">
+       <link rel="stylesheet" type="text/css" ng-href="{{css.product.my}}">
 
- 	</div>
-    <!-- font controller start -->
-    <div ng-controller="FontController as fc">
+   </div>
+   <!-- font controller start -->
+   <div ng-controller="FontController as fc">
     <link ng-href={{fc.product}} rel='stylesheet' type='text/css'>
-    </div>
-    <div ng-controller="BodyFontController as fc">
+</div>
+<div ng-controller="BodyFontController as fc">
     <link ng-href={{fc.product.fh}} rel='stylesheet' type='text/css'>
     <link ng-href={{fc.product.ff}} rel='stylesheet' type='text/css'>
-    </div>
+</div>
 <!-- font controller end -->
- <div class = "col-md-12 heading index" ng-controller="HeadingController as head">
- <!--<hr> -->
- <h1 class="mainheading">{{head.product.heading | uppercase}}</h1>
- <!-- <hr> -->
+<div class = "col-md-12 heading index" ng-controller="HeadingController as head">
+   <!--<hr> -->
+   <h1 class="mainheading">{{head.product.heading | uppercase}}</h1>
+   <!-- <hr> -->
 </div>
 </head>
 <body ng-controller="StoreController as store" >
-<!-- start of nav bar -->
-<div class="body">
-<nav class="navbar mynav" ng-controller="NavController as nav">
-	<!-- / start collapsed navbar -->
- 	<div class="navbar-header">
-        <button type="button" 
-                class="navbar-toggle collapsed" 
-                data-toggle="collapse" 
-                data-target = "#my_navbar" 
-                aria-expanded="false">
-          hello!
+    <!-- start of nav bar -->
+    <div class="body">
+        <nav class="navbar mynav" ng-controller="NavController as nav">
+           <!-- / start collapsed navbar -->
+           <div class="navbar-header">
+            <button type="button" 
+            class="navbar-toggle collapsed" 
+            data-toggle="collapse" 
+            data-target = "#my_navbar" 
+            aria-expanded="false">
+            hello!
         </button>
     </div><!-- / collapsed navbar -->
-	<div class="collapse navbar-collapse" id= "my_navbar">
+    <div class="collapse navbar-collapse" id= "my_navbar">
         <ul class = "nav navbar-nav" ng-repeat="ls in nav.product">
           <li class="active index">
             <a class="toplist" ng-href="{{ls.url}}">{{ls.name}}</a>
-          </li>
-        </ul>
-    </div>
+        </li>
+    </ul>
+</div>
 </nav>
 <!-- end of nav bar -->
 <!-- start of breadcrumb -->
 <div class="container" >
-        <ol class="breadcrumb">
-            <li><a href="index.html">Home</a></li>
-    	</ol>
+    <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+    </ol>
 </div>
 <!-- end of breadcrumb -->
 
@@ -67,93 +67,93 @@
 </div>
 <div ng-controller = "NewsController as nc" >
     <div class="row">
-    <div ng-repeat="x in data.results" class="row articles">
-        <div class="col-xs-1 col-md-1">
+        <div ng-repeat="x in data.results" class="row articles">
+            <div class="col-xs-1 col-md-1">
 
-        </div>
-        <div class="col-xs-2 col-md-2 imgart">
-            <img ng-src="{{x.multimedia[1].url}}" width="100%" height = "100%">
-            
-        </div>  
-        <div class = "col-md-3 col-xs-3 newsarticle" >
-            <h4><a ng-href="{{x.url}}">{{x.title | uppercase}}</a></h4>
-            <p>{{x.abstract}}</p>
-        </div>
-        <div class = "col-md-5 col-xs-5 careerart"  >
-            <h4><a ng-href="{{nc.product[data.results.indexOf(x)].url}}">{{nc.product[data.results.indexOf(x)].title | uppercase}}</a></h4>
-            <p>{{nc.product[data.results.indexOf(x)].content}}</p>
+            </div>
+            <div class="col-xs-2 col-md-2 imgart">
+                <img ng-src="{{x.multimedia[1].url}}" width="100%" height = "100%">
+                
+            </div>  
+            <div class = "col-md-3 col-xs-3 newsarticle" >
+                <h4><a ng-href="{{x.url}}">{{x.title | uppercase}}</a></h4>
+                <p>{{x.abstract}}</p>
+            </div>
+            <div class = "col-md-5 col-xs-5 careerart"  >
+                <h4><a ng-href="{{nc.product[data.results.indexOf(x)].url}}">{{nc.product[data.results.indexOf(x)].title | uppercase}}</a></h4>
+                <p>{{nc.product[data.results.indexOf(x)].content}}</p>
 
-        </div>
-        <div class="col-md-1 col-xs-1">
+            </div>
+            <div class="col-md-1 col-xs-1">
 
+            </div>
         </div>
     </div>
-    </div>
-    </div>
+</div>
 
 <!-- News Article End-->
 <!--Videos Start -->
 <hr class="bodyhr">
 
-    <div class="row">
-        <div class="col-xs-1 col-md-1">
+<div class="row">
+    <div class="col-xs-1 col-md-1">
 
-        </div>
-        <div class="col-xs-10 col-md-10">
-        <h3>Popular Videos</h3>
-        </div>
-        <div class="col-xs-1 col-md-1">
-
-        </div>
     </div>
+    <div class="col-xs-10 col-md-10">
+        <h3>Popular Videos</h3>
+    </div>
+    <div class="col-xs-1 col-md-1">
+
+    </div>
+</div>
 <div ng-controller = "VideoController as vc" >    
     <div ng-repeat="x in data.items | limitTo:3">
-    <div class="row">
-        <div class="col-xs-1 col-md-1">
+        <div class="row">
+            <div class="col-xs-1 col-md-1">
 
-        </div>
-        <div class="col-xs-10 col-md-10">
-        <h4><a ng-href="{{x.snippet.thumbnails.medium.url}}">{{x.snippet.title | uppercase}}</a></h4>
-        </div>
-        <div class="col-xs-1 col-md-1">
+            </div>
+            <div class="col-xs-10 col-md-10">
+                <h4><a ng-href="{{x.snippet.thumbnails.medium.url}}">{{x.snippet.title | uppercase}}</a></h4>
+            </div>
+            <div class="col-xs-1 col-md-1">
 
+            </div>
         </div>
-    </div>
-    <div class="row">
-    <div class="articles pad">
-        <div class="col-xs-1 col-md-1">
+        <div class="row">
+            <div class="articles pad">
+                <div class="col-xs-1 col-md-1">
 
+                </div>
+                
+                <div class="col-xs-4 col-md-3">
+                    
+                    <iframe width="320" height="180" ng-src="{{vc.product.concat(x.id)}}"> </iframe>
+                    
+                </div>
+                <div class="col-xs-6 col-md-7">
+                    <p>{{x.snippet.localized.description.split('.')[0]}}</p> 
+                </div>
+                <div class="col-xs-1 col-md-1">
+                 
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-md-1">
+
+            </div>
+            <div class="col-xs-2 col-md-1">
+                <img src="images/views.png">{{x.statistics.viewCount}}</img>
+            </div>
+            <div class="col-xs-2 col-md-1">
+                <img src="images/likes.png">{{x.statistics.likeCount}}</img>
+            </div>
+            <div class="col-xs-7 col-md-9">
+
+            </div>
         </div>
         
-        <div class="col-xs-4 col-md-3">
-            
-            <iframe width="320" height="180" ng-src="{{vc.product.concat(x.id)}}"> </iframe>
-            
-        </div>
-        <div class="col-xs-6 col-md-7">
-            <p>{{x.snippet.localized.description.split('.')[0]}}</p> 
-        </div>
-        <div class="col-xs-1 col-md-1">
-           
-        </div>
-    </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-1 col-md-1">
-
-        </div>
-        <div class="col-xs-2 col-md-1">
-        <img src="images/views.png">{{x.statistics.viewCount}}</img>
-        </div>
-        <div class="col-xs-2 col-md-1">
-        <img src="images/likes.png">{{x.statistics.likeCount}}</img>
-        </div>
-        <div class="col-xs-7 col-md-9">
-
-        </div>
-    </div>
-    
-    <hr class="bodyhr1">
+        <hr class="bodyhr1">
     </div>
 </div>
 <!--Videos End -->
@@ -163,15 +163,15 @@
 <!-- start of footer -->
 
 <div class="footerpad">
-<footer class = "panel-footer footer-default backfoot index"  ng-controller="FooterNavController as footnav">
-    <div class="row nav-bar-custom">
-    <ul class = "nav navbar-nav nav-bar-custom index" ng-repeat="ls in footnav.product">
-        <li class = "footerlist">
-            <a ng-href="{{ls.url}}">{{ls.name}}</a>
-        </li>
-    </ul>
-    </div>
-</footer>
+    <footer class = "panel-footer footer-default backfoot index"  ng-controller="FooterNavController as footnav">
+        <div class="row nav-bar-custom">
+            <ul class = "nav navbar-nav nav-bar-custom index" ng-repeat="ls in footnav.product">
+                <li class = "footerlist">
+                    <a ng-href="{{ls.url}}">{{ls.name}}</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </div>
 <!-- end of footer -->
 <script type="text/javascript" src="js/angular.min.js"></script>
