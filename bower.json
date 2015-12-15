@@ -1,0 +1,19 @@
+{
+  "name": "tarunBlog",
+  "homepage": "https://github.com/rajatarun/html",
+  "authors": [
+    "rajatarun <traja1@binghamton.edu>"
+  ],
+  "description": "this is my website",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
