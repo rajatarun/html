@@ -55,9 +55,10 @@
 		background-color: #009688;
 		color: #fff
 	}
-	img {
+	img.img-gallery {
 		box-shadow: 10px -10px 10px #ccc
 	}
+	
 	.photos {
 		width: 300px;
 		height: 300px;
@@ -165,10 +166,10 @@
 		background-color: #009688;
 		color: #fff
 	}
-	img {
+	img.img-gallery {
 		box-shadow: 10px -10px 10px #ccc
 	}
-
+		
 	.imgart {
 		padding-bottom: 5px
 	}
@@ -276,10 +277,10 @@
 		background-color: #009688;
 		color: #fff
 	}
-	img {
+	img.img-gallery {
 		box-shadow: 10px -10px 10px #ccc
 	}
-
+	
 	.imgart {
 		padding-bottom: 5px
 	}
