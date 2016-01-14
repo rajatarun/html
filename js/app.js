@@ -20,7 +20,7 @@
 		}
 		];
 	var head = {
-		heading:"tarun blog"
+		heading:"blog"
 	}
 	var nav =[
 		{ 

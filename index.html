@@ -2,7 +2,10 @@
 <html ng-app="store">
 <head class="container">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    
     <title>TARUNBLOG | STUDENTCONNECT</title>
+	</div>
+	
     <div ng-controller="CssController as css">
        <link rel="stylesheet" type="text/css" ng-href="{{css.product.boot}}">
        <link rel="stylesheet" type="text/css" ng-href="{{css.product.my}}">
@@ -17,11 +20,49 @@
     <link ng-href={{fc.product.ff}} rel='stylesheet' type='text/css'>
 </div>
 <!-- font controller end -->
+
+<div class="row loginbutton">
+    <div class="col-md-10"></div>
+    <div class="col-md-2 btn-group login" type="button" role="group">
+        <button class="btn btn-default pull-right">Login</button>
+    <button class="btn btn-default pull-right">Register</button></div>
+</div>	
 <div class = "col-md-12 heading heading-fixed index" ng-controller="HeadingController as head">
    <!--<hr> -->
    <h1 class="mainheading">{{head.product.heading | uppercase}}</h1>
-   <!-- <hr> -->
+   
+	
 </div>
+<!-- <div class="container">
+<button type="button" class="button btn btn-default" data-toggle="modal" data-target="#myModal">login</button>
+<div id="myModal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+
+    <!-- Modal content-->
+    <!-- <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Login</h4>
+      </div>
+      <div class="modal-body">
+        <table>
+			<tr>
+				<td><text value="login"></text> </td>
+				<td><text value="password"></text> </td>
+			</tr>
+		</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+	</div>
+</div>
+</div> -->
+
+   <!-- <hr> -->
+
 </head>
 <body ng-controller="StoreController as store" >
     <!-- start of nav bar -->
@@ -70,25 +111,56 @@
 <div ng-controller = "NewsController as nc" >
     <div class="row">
         <div ng-repeat="x in data.results" class="row articles">
-            <div class="col-xs-1 col-md-1">
+            
+            <div class="media">
+                <div class="media-left media-middle">
+                    <div class="media-object">
+                        <a href="#">
+                            <div class="col-xs-1 col-md-1">
 
+                            </div>
+                            <div class="col-xs-2 col-md-2 thumbnail">
+                                <img ng-src="{{x.multimedia[1].url}}" width="100%" height = "100%">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="media-body">
+                           <div class = "col-md-4 col-xs-4 newsarticle" >
+                            <blockquote>
+                                <h4><a ng-href="{{x.url}}">{{x.title | uppercase}}</a></h4>
+                                <p>{{x.abstract}}</p>
+                                <div class="nav nav-pills">
+                                    
+                                    <span class="label label-default">{{x.des_facet[0]}}</span>
+                                    <span class="label label-default">{{x.des_facet[1]}}</span>
+                                    <span class="label label-primary">{{x.geo_facet[0]}}</span>
+                                    
+                                </div> 
+                                <footer>{{x.created_date | date:'MM/dd/yyyy @ h:mma'}}</footer>     
+                                </blockquote>
+                            </div>
+                            <div class = "col-md-5 col-xs-5 careerart"  >
+                                <h4><a ng-href="{{nc.product[data.results.indexOf(x)].url}}">{{nc.product[data.results.indexOf(x)].title | uppercase}}</a></h4>
+                                <p>{{nc.product[data.results.indexOf(x)].content}}</p>
+
+                            </div>
+                            <div class="col-md-1 col-xs-1">
+
+                            </div>
+                    </div>
+
+                </div>
             </div>
-            <div class="col-xs-2 col-md-2 imgart">
+            <!-- <div class="col-xs-2 col-md-2 imgart">
                 <img ng-src="{{x.multimedia[1].url}}" width="100%" height = "100%">
                 
             </div>  
             <div class = "col-md-3 col-xs-3 newsarticle" >
                 <h4><a ng-href="{{x.url}}">{{x.title | uppercase}}</a></h4>
                 <p>{{x.abstract}}</p>
-            </div>
-            <div class = "col-md-5 col-xs-5 careerart"  >
-                <h4><a ng-href="{{nc.product[data.results.indexOf(x)].url}}">{{nc.product[data.results.indexOf(x)].title | uppercase}}</a></h4>
-                <p>{{nc.product[data.results.indexOf(x)].content}}</p>
-
-            </div>
-            <div class="col-md-1 col-xs-1">
-
-            </div>
+            </div> -->
+            
+            
         </div>
     </div>
 </div>
@@ -127,10 +199,10 @@
 
                 </div>
                 
-                <div class="col-xs-4 col-md-3">
-                    
-                    <iframe width="320" height="180" ng-src="{{vc.product.concat(x.id)}}"> </iframe>
-                    
+                <div class="col-xs-4 col-md-3 ">
+                    <div class="embed-responsive embed-responsive-16by9">
+                    <iframe ng-src="{{vc.product.concat(x.id)}}"> </iframe>
+                    </div>
                 </div>
                 <div class="col-xs-6 col-md-7">
                     <p>{{x.snippet.localized.description.split('.')[0]}}</p> 
@@ -144,11 +216,11 @@
             <div class="col-xs-1 col-md-1">
 
             </div>
-            <div class="smallimage col-xs-2 col-md-1">
-                <img src="images/views.png">{{x.statistics.viewCount}}</img>
+            <div class="glyphicon glyphicon-eye-open col-xs-2 col-md-1">
+                {{x.statistics.viewCount}}
             </div>
-            <div class="smallimage col-xs-2 col-md-1">
-                <img src="images/likes.png">{{x.statistics.likeCount}}</img>
+            <div class="glyphicon glyphicon-thumbs-up col-xs-2 col-md-1">
+                {{x.statistics.likeCount}}
             </div>
             <div class="col-xs-7 col-md-9">
 
@@ -178,6 +250,7 @@
 <!-- end of footer -->
 <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
+<script src="bower_components\bootstrap\dist\js\bootstrap.min.js"></script>
 
 </body>
 
