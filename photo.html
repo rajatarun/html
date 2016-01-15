@@ -95,7 +95,7 @@
 
 
             </div>-->
-            <div class="media" ng-repeat="pic in pic.product">
+            <div class="media" ng-repeat="pic in pic.product | orderBy:'DateTimeDigitized'">
                 <div class="row">
                 <div class="media-left media-middle">
                     <div class="col-md-1">

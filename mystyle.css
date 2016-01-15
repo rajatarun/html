@@ -13,6 +13,14 @@
         text-align: center;
         background-color: #5E35B1
     }
+    .heading.blog {
+        text-align: center;
+        background-color: #558B2F
+    }
+    .active.blog a:hover{
+    	background-color: #558B2F;	
+    	color:#fff;
+    }
     .label-danger {
         border-radius: 1em
     }
@@ -36,7 +44,7 @@
   }
     .heading.photo {
         text-align: center;
-        background-color: #FF7043
+        background-color: #795548
     }
     .backfoot {
         background-color: #242729 color: white
@@ -71,7 +79,7 @@
         color: #fff
     }
     .active.photo a:hover {
-        background-color: #FF7043;
+        background-color: #795548;
         color: #fff
     }
     .active.contact a:hover {
@@ -136,6 +144,14 @@
     .btn-pic {
   	padding-bottom: 2px;
   	}
+  	.heading.blog {
+        text-align: center;
+        background-color: #558B2F
+    }
+    .active.blog a:hover{
+    	background-color: #558B2F;
+    	color:white;	
+    }
     .affix {
       top:0;
       width: 100%;
@@ -160,7 +176,7 @@
     }
     .heading.photo {
         text-align: center;
-        background-color: #FF7043
+        background-color: #795548
     }
     .backfoot {
         background-color: #242729;
@@ -197,7 +213,7 @@
         color: #fff
     }
     .active.photo a:hover {
-        background-color: #FF7043;
+        background-color: #795548;
         color: #fff
     }
     .active.contact a:hover {
@@ -262,6 +278,14 @@
     .btn-pic{
   	padding-bottom: 2px;
   }
+  .heading.blog {
+        text-align: center;
+        background-color: #558B2F
+    }
+    .active.blog a:hover{
+    	background-color: #558B2F;
+    	color: #fff;	
+    }
     .affix {
       top:0;
       width: 100%;
@@ -286,7 +310,7 @@
     }
     .heading.photo {
         text-align: center;
-        background-color: #FF7043
+        background-color: #795548
     }
     .backfoot {
         background-color: #242729;
@@ -323,7 +347,7 @@
         color: #fff
     }
     .active.photo a:hover {
-        background-color: #FF7043;
+        background-color: #795548;
         color: #fff
     }
     .active.contact a:hover {
@@ -391,6 +415,14 @@
     .affix + .container-fluid {
       padding-top: 220px;
   }
+  .heading.blog {
+        text-align: center;
+        background-color: #558B2F
+    }
+    .active.blog a:hover{
+    	background-color: #558B2F;
+    	color : #fff	
+    }
     .affix {
       top:0;
       width: 100%;
@@ -412,7 +444,7 @@
     }
     .heading.photo {
         text-align: center;
-        background-color: #FF7043
+        background-color: #795548
     }
     .backfoot {
         background-color: #242729;
@@ -449,7 +481,7 @@
         color: #fff
     }
     .active.photo a:hover {
-        background-color: #FF7043;
+        background-color: #795548;
         color: #fff
     }
     .active.contact a:hover {
