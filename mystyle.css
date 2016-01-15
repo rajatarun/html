@@ -1,479 +1,461 @@
 @media (min-width: 1600px) {
-	.heading{
-		background-color: #4285F4
-	}
-	.heading.index {
-		text-align: center;
-		background-color: #4285F4
-	}
-	.heading.about {
-		text-align: center;
-		background-color: #5E35B1
-	}
-	.label-danger{
-		border-radius: 1em
-	}
-	.loginbutton{
-		background-color: #4285F4
-	}
-	.heading.contact {
-		text-align: center;
-		background-color: #009688
-	}
-	.heading.photo {
-		text-align: center;
-		background-color: #FF7043
-	}
-	.backfoot {
-		background-color: #242729
-		color: white
-	}
-	button.login {
-		background: white;
-	}
-	.nav-bar-custom {
-		background-color: #242729
-		color: white
-	}
-	.footerpad {
-		padding-top: 10px
-	}
-	.nav.footer-default {
-		color: white
-	}
-	h1.mainheading {
-		font-size: 100px;
-		font-family: 'Roboto Condensed', 'Bubblegum Sans', 'Londrina Solid', 'Arizonia', myFirstFont;
-		color: #fff
-	}
-	a.toplist {
-		font-family: verdana;
-		font-size: 20px
-	}
-	.active.index a:hover {
-		background-color: #4285F4;
-		color: #fff
-	}
-	.active.about a:hover {
-		background-color: #5E35B1;
-		color: #fff
-	}
-	.active.photo a:hover {
-		background-color: #FF7043;
-		color: #fff
-	}
-	.active.contact a:hover {
-		background-color: #009688;
-		color: #fff
-	}
-	img.img-gallery {
-		box-shadow: 10px -10px 10px #ccc
-	}
-	
-	.photos {
-		width: 300px;
-		height: 300px;
-		background-position: center center;
-		background-repeat: no-repeat;
-		transform: rotate(90deg)
-	}
-	.imgart {
-		padding-bottom: 5px
-	}
-	.gallery {
-		margin-right: 40px;
-		padding: 50px 10px 100px 110px
-	}
-	.body {
-		background-color: #FFF
-	}
-	.footerhr {
-		background-color: #EEE
-	}
-	h4 {
-		font-family: 'Raleway'
-	}
-	.mypicture {
-		padding-left: 120px
-	}
-	@font-face {
-		font-family: myFirstFont;
-		src: url(Monoton-Regular.ttf)
-	}
-	
-	hr.bodyhr {
-		height: 0;
-		width: 85%;
-		border: thin solid grey
-	}
-	hr.bodyhr1 {
-		height: 0;
-		width: 84%;
-		border: thin solid grey
-	}
-	div.pad {
-		padding-bottom: 20px
-	}
-	p {
-		font-family: 'Spinnaker'
-	}
+    .heading {
+        background-color: #4285F4
+    }
+    .heading.index {
+        text-align: center;
+        background-color: #4285F4
+    }
+    .heading.about {
+        text-align: center;
+        background-color: #5E35B1
+    }
+    .label-danger {
+        border-radius: 1em
+    }
+    .loginbutton {
+        background-color: #4285F4
+    }
+    .heading.contact {
+        text-align: center;
+        background-color: #009688
+    }
+    .heading.photo {
+        text-align: center;
+        background-color: #FF7043
+    }
+    .backfoot {
+        background-color: #242729 color: white
+    }
+    button.login {
+        background: white;
+    }
+    .nav-bar-custom {
+        background-color: #242729 color: white
+    }
+    .footerpad {
+        padding-top: 10px
+    }
+    .nav.footer-default {
+        color: white
+    }
+    h1.mainheading {
+        font-size: 100px;
+        font-family: 'Roboto Condensed', 'Bubblegum Sans', 'Londrina Solid', 'Arizonia', myFirstFont;
+        color: #fff
+    }
+    a.toplist {
+        font-family: verdana;
+        font-size: 20px
+    }
+    .active.index a:hover {
+        background-color: #4285F4;
+        color: #fff
+    }
+    .active.about a:hover {
+        background-color: #5E35B1;
+        color: #fff
+    }
+    .active.photo a:hover {
+        background-color: #FF7043;
+        color: #fff
+    }
+    .active.contact a:hover {
+        background-color: #009688;
+        color: #fff
+    }
+    img.img-gallery {
+        box-shadow: 10px -10px 10px #ccc
+    }
+    .photos {
+        width: 300px;
+        height: 300px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        transform: rotate(90deg)
+    }
+    .imgart {
+        padding-bottom: 5px
+    }
+    .gallery {
+        margin-right: 40px;
+        padding: 50px 10px 100px 110px
+    }
+    .body {
+        background-color: #FFF
+    }
+    .footerhr {
+        background-color: #EEE
+    }
+    h4 {
+        font-family: 'Raleway'
+    }
+    .mypicture {
+        padding-left: 120px
+    }
+    @font-face {
+        font-family: myFirstFont;
+        src: url(Monoton-Regular.ttf)
+    }
+    hr.bodyhr {
+        height: 0;
+        width: 85%;
+        border: thin solid grey
+    }
+    hr.bodyhr1 {
+        height: 0;
+        width: 84%;
+        border: thin solid grey
+    }
+    div.pad {
+        padding-bottom: 20px
+    }
+    p {
+        font-family: 'Spinnaker'
+    }
 }
-	
-
-
-
-
-
-
-
 @media (min-width: 1400px) and (max-width: 1600px) {
-.heading.index {
-		text-align: center;
-		background-color: #4285F4
-	}
-	.heading.about {
-		text-align: center;
-		background-color: #5E35B1
-	}
-	.label-danger{
-		border-radius: 1em;
-	}
-	.loginbutton{
-		background-color: #4285F4
-	}
-	.heading.contact {
-		text-align: center;
-		background-color: #009688
-	}
-	.heading.photo {
-		text-align: center;
-		background-color: #FF7043
-	}
-	.backfoot {
-		background-color: #242729;
-		color: white
-	}
-	button.login {
-		background: white;
-	}
-	.nav-bar-custom {
-		background-color: #242729;
-		color: white
-	}
-	.footerpad {
-		padding-top: 10px
-	}
-	.nav.footer-default {
-		color: white
-	}
-	h1.mainheading {
-		font-size: 100px;
-		font-family: 'Roboto Condensed', 'Bubblegum Sans', 'Londrina Solid', 'Arizonia', myFirstFont;
-		color: #fff
-	}
-	a.toplist {
-		font-family: verdana;
-		font-size: 20px
-	}
-	.active.index a:hover {
-		background-color: #4285F4;
-		color: #fff
-	}
-	.active.about a:hover {
-		background-color: #5E35B1;
-		color: #fff
-	}
-	.active.photo a:hover {
-		background-color: #FF7043;
-		color: #fff
-	}
-	.active.contact a:hover {
-		background-color: #009688;
-		color: #fff
-	}
-	img.img-gallery {
-		box-shadow: 10px -10px 10px #ccc
-	}
-	
-	.photos {
-		width: 300px;
-		height: 300px;
-		background-position: center center;
-		background-repeat: no-repeat;
-		transform: rotate(90deg)
-	}
-	.imgart {
-		padding-bottom: 5px
-	}
-	.gallery {
-		margin-right: 40px;
-		padding: 50px 10px 100px 110px
-	}
-	.body {
-		background-color: #FFF
-	}
-	.footerhr {
-		background-color: #EEE
-	}
-	h4 {
-		font-family: 'Raleway'
-	}
-	.mypicture {
-		padding-left: 120px
-	}
-	@font-face {
-		font-family: myFirstFont;
-		src: url(Monoton-Regular.ttf)
-	}
-	
-	hr.bodyhr {
-		height: 0;
-		width: 85%;
-		border: thin solid grey
-	}
-	hr.bodyhr1 {
-		height: 0;
-		width: 84%;
-		border: thin solid grey
-	}
-	div.pad {
-		padding-bottom: 20px
-	}
-	p {
-		font-family: 'Spinnaker'
-	}
+    .heading.index {
+        text-align: center;
+        background-color: #4285F4
+    }
+    .heading.about {
+        text-align: center;
+        background-color: #5E35B1
+    }
+    .label-danger {
+        border-radius: 1em;
+    }
+    .loginbutton {
+        background-color: #4285F4
+    }
+    .heading.contact {
+        text-align: center;
+        background-color: #009688
+    }
+    .heading.photo {
+        text-align: center;
+        background-color: #FF7043
+    }
+    .backfoot {
+        background-color: #242729;
+        color: white
+    }
+    button.login {
+        background: white;
+    }
+    .nav-bar-custom {
+        background-color: #242729;
+        color: white
+    }
+    .footerpad {
+        padding-top: 10px
+    }
+    .nav.footer-default {
+        color: white
+    }
+    h1.mainheading {
+        font-size: 100px;
+        font-family: 'Roboto Condensed', 'Bubblegum Sans', 'Londrina Solid', 'Arizonia', myFirstFont;
+        color: #fff
+    }
+    a.toplist {
+        font-family: verdana;
+        font-size: 20px
+    }
+    .active.index a:hover {
+        background-color: #4285F4;
+        color: #fff
+    }
+    .active.about a:hover {
+        background-color: #5E35B1;
+        color: #fff
+    }
+    .active.photo a:hover {
+        background-color: #FF7043;
+        color: #fff
+    }
+    .active.contact a:hover {
+        background-color: #009688;
+        color: #fff
+    }
+    img.img-gallery {
+        box-shadow: 10px -10px 10px #ccc
+    }
+    .photos {
+        width: 300px;
+        height: 300px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        transform: rotate(90deg)
+    }
+    .imgart {
+        padding-bottom: 5px
+    }
+    .gallery {
+        margin-right: 40px;
+        padding: 50px 10px 100px 110px
+    }
+    .body {
+        background-color: #FFF
+    }
+    .footerhr {
+        background-color: #EEE
+    }
+    h4 {
+        font-family: 'Raleway'
+    }
+    .mypicture {
+        padding-left: 120px
+    }
+    @font-face {
+        font-family: myFirstFont;
+        src: url(Monoton-Regular.ttf)
+    }
+    hr.bodyhr {
+        height: 0;
+        width: 85%;
+        border: thin solid grey
+    }
+    hr.bodyhr1 {
+        height: 0;
+        width: 84%;
+        border: thin solid grey
+    }
+    div.pad {
+        padding-bottom: 20px
+    }
+    p {
+        font-family: 'Spinnaker'
+    }
 }
 @media (min-width: 1000px) and (max-width: 1400px) {
-	.heading.index {
-		text-align: center;
-		background-color: #4285F4
-	}
-	.heading.about {
-		text-align: center;
-		background-color: #5E35B1
-	}
-	.label-danger{
-		border-radius: 1em;
-	}
-	.loginbutton{
-		background-color: #4285F4
-	}
-	.heading.contact {
-		text-align: center;
-		background-color: #009688
-	}
-	.heading.photo {
-		text-align: center;
-		background-color: #FF7043
-	}
-	.backfoot {
-		background-color: #242729;
-		color: white
-	}
-	button.login {
-		background: white;
-	}
-	.nav-bar-custom {
-		background-color: #242729;
-		color: white
-	}
-	.footerpad {
-		padding-top: 10px
-	}
-	.nav.footer-default {
-		color: white
-	}
-	h1.mainheading {
-		font-size: 100px;
-		font-family: 'Roboto Condensed', 'Bubblegum Sans', 'Londrina Solid', 'Arizonia', myFirstFont;
-		color: #fff
-	}
-	a.toplist {
-		font-family: verdana;
-		font-size: 20px
-	}
-	.active.index a:hover {
-		background-color: #4285F4;
-		color: #fff
-	}
-	.active.about a:hover {
-		background-color: #5E35B1;
-		color: #fff
-	}
-	.active.photo a:hover {
-		background-color: #FF7043;
-		color: #fff
-	}
-	.active.contact a:hover {
-		background-color: #009688;
-		color: #fff
-	}
-	img.img-gallery {
-		box-shadow: 10px -10px 10px #ccc
-	}
-	
-	.photos {
-		width: 300px;
-		height: 300px;
-		background-position: center center;
-		background-repeat: no-repeat;
-		transform: rotate(90deg)
-	}
-	.imgart {
-		padding-bottom: 5px
-	}
-	.gallery {
-		margin-right: 40px;
-		padding: 50px 10px 100px 110px
-	}
-	.body {
-		background-color: #FFF
-	}
-	.footerhr {
-		background-color: #EEE
-	}
-	h4 {
-		font-family: 'Raleway'
-	}
-	.mypicture {
-		padding-left: 120px
-	}
-	@font-face {
-		font-family: myFirstFont;
-		src: url(Monoton-Regular.ttf)
-	}
-	
-	hr.bodyhr {
-		height: 0;
-		width: 85%;
-		border: thin solid grey
-	}
-	hr.bodyhr1 {
-		height: 0;
-		width: 84%;
-		border: thin solid grey
-	}
-	div.pad {
-		padding-bottom: 20px
-	}
-	p {
-		font-family: 'Spinnaker'
-	}
-}	
+    .heading.index {
+        text-align: center;
+        background-color: #4285F4
+    }
+    .heading.about {
+        text-align: center;
+        background-color: #5E35B1
+    }
+    .label-danger {
+        border-radius: 1em;
+    }
+    .loginbutton {
+        background-color: #4285F4
+    }
+    .heading.contact {
+        text-align: center;
+        background-color: #009688
+    }
+    .heading.photo {
+        text-align: center;
+        background-color: #FF7043
+    }
+    .backfoot {
+        background-color: #242729;
+        color: white
+    }
+    button.login {
+        background: white;
+    }
+    .nav-bar-custom {
+        background-color: #242729;
+        color: white
+    }
+    .footerpad {
+        padding-top: 10px
+    }
+    .nav.footer-default {
+        color: white
+    }
+    h1.mainheading {
+        font-size: 100px;
+        font-family: 'Roboto Condensed', 'Bubblegum Sans', 'Londrina Solid', 'Arizonia', myFirstFont;
+        color: #fff
+    }
+    a.toplist {
+        font-family: verdana;
+        font-size: 20px
+    }
+    .active.index a:hover {
+        background-color: #4285F4;
+        color: #fff
+    }
+    .active.about a:hover {
+        background-color: #5E35B1;
+        color: #fff
+    }
+    .active.photo a:hover {
+        background-color: #FF7043;
+        color: #fff
+    }
+    .active.contact a:hover {
+        background-color: #009688;
+        color: #fff
+    }
+    img.img-gallery {
+        box-shadow: 10px -10px 10px #ccc
+    }
+    .photos {
+        width: 300px;
+        height: 300px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        transform: rotate(90deg)
+    }
+    .imgart {
+        padding-bottom: 5px
+    }
+    .gallery {
+        margin-right: 40px;
+        padding: 50px 10px 100px 110px
+    }
+    .body {
+        background-color: #FFF
+    }
+    .footerhr {
+        background-color: #EEE
+    }
+    h4 {
+        font-family: 'Raleway'
+    }
+    .mypicture {
+        padding-left: 120px
+    }
+    @font-face {
+        font-family: myFirstFont;
+        src: url(Monoton-Regular.ttf)
+    }
+    hr.bodyhr {
+        height: 0;
+        width: 85%;
+        border: thin solid grey
+    }
+    hr.bodyhr1 {
+        height: 0;
+        width: 84%;
+        border: thin solid grey
+    }
+    div.pad {
+        padding-bottom: 20px
+    }
+    p {
+        font-family: 'Spinnaker'
+    }
+}
 @media (min-width: 750px) and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) {
-.heading.index {
-		text-align: center;
-		background-color: #4285F4
-	}
-	.heading.about {
-		text-align: center;
-		background-color: #5E35B1
-	}
-	.label-danger{
-		border-radius: 1em;
-	}
-	.loginbutton{
-		background-color: #4285F4
-	}
-	.heading.contact {
-		text-align: center;
-		background-color: #009688
-	}
-	.heading.photo {
-		text-align: center;
-		background-color: #FF7043
-	}
-	.backfoot {
-		background-color: #242729;
-		color: white
-	}
-	button.login {
-		background: white;
-	}
-	.nav-bar-custom {
-		background-color: #242729;
-		color: white
-	}
-	.footerpad {
-		padding-top: 10px
-	}
-	.nav.footer-default {
-		color: white
-	}
-	h1.mainheading {
-		font-size: 100px;
-		font-family: 'Roboto Condensed', 'Bubblegum Sans', 'Londrina Solid', 'Arizonia', myFirstFont;
-		color: #fff
-	}
-	a.toplist {
-		font-family: verdana;
-		font-size: 20px
-	}
-	.active.index a:hover {
-		background-color: #4285F4;
-		color: #fff
-	}
-	.active.about a:hover {
-		background-color: #5E35B1;
-		color: #fff
-	}
-	.active.photo a:hover {
-		background-color: #FF7043;
-		color: #fff
-	}
-	.active.contact a:hover {
-		background-color: #009688;
-		color: #fff
-	}
-	img.img-gallery {
-		box-shadow: 10px -10px 10px #ccc
-	}
-	
-	.photos {
-		width: 300px;
-		height: 300px;
-		background-position: center center;
-		background-repeat: no-repeat;
-		transform: rotate(90deg)
-	}
-	.imgart {
-		padding-bottom: 5px
-	}
-	.gallery {
-		margin-right: 40px;
-		padding: 50px 10px 100px 110px
-	}
-	.body {
-		background-color: #FFF
-	}
-	.footerhr {
-		background-color: #EEE
-	}
-	h4 {
-		font-family: 'Raleway'
-	}
-	.mypicture {
-		padding-left: 120px
-	}
-	@font-face {
-		font-family: myFirstFont;
-		src: url(Monoton-Regular.ttf)
-	}
-	
-	hr.bodyhr {
-		height: 0;
-		width: 85%;
-		border: thin solid grey
-	}
-	hr.bodyhr1 {
-		height: 0;
-		width: 84%;
-		border: thin solid grey
-	}
-	div.pad {
-		padding-bottom: 20px
-	}
-	p {
-		font-family: 'Spinnaker'
-	}
+    .heading.index {
+        text-align: center;
+        background-color: #4285F4
+    }
+    .heading.about {
+        text-align: center;
+        background-color: #5E35B1
+    }
+    .label-danger {
+        border-radius: 1em;
+    }
+    .loginbutton {
+        background-color: #4285F4
+    }
+    .heading.contact {
+        text-align: center;
+        background-color: #009688
+    }
+    .heading.photo {
+        text-align: center;
+        background-color: #FF7043
+    }
+    .backfoot {
+        background-color: #242729;
+        color: white
+    }
+    button.login {
+        background: white;
+    }
+    .nav-bar-custom {
+        background-color: #242729;
+        color: white
+    }
+    .footerpad {
+        padding-top: 10px
+    }
+    .nav.footer-default {
+        color: white
+    }
+    h1.mainheading {
+        font-size: 100px;
+        font-family: 'Roboto Condensed', 'Bubblegum Sans', 'Londrina Solid', 'Arizonia', myFirstFont;
+        color: #fff
+    }
+    a.toplist {
+        font-family: verdana;
+        font-size: 20px
+    }
+    .active.index a:hover {
+        background-color: #4285F4;
+        color: #fff
+    }
+    .active.about a:hover {
+        background-color: #5E35B1;
+        color: #fff
+    }
+    .active.photo a:hover {
+        background-color: #FF7043;
+        color: #fff
+    }
+    .active.contact a:hover {
+        background-color: #009688;
+        color: #fff
+    }
+    img.img-gallery {
+        box-shadow: 10px -10px 10px #ccc
+    }
+    .photos {
+        width: 300px;
+        height: 300px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        transform: rotate(90deg)
+    }
+    .imgart {
+        padding-bottom: 5px
+    }
+    .gallery {
+        margin-right: 40px;
+        padding: 50px 10px 100px 110px
+    }
+    .body {
+        background-color: #FFF
+    }
+    .footerhr {
+        background-color: #EEE
+    }
+    h4 {
+        font-family: 'Raleway'
+    }
+    .mypicture {
+        padding-left: 120px
+    }
+    @font-face {
+        font-family: myFirstFont;
+        src: url(Monoton-Regular.ttf)
+    }
+    hr.bodyhr {
+        height: 0;
+        width: 85%;
+        border: thin solid grey
+    }
+    hr.bodyhr1 {
+        height: 0;
+        width: 84%;
+        border: thin solid grey
+    }
+    div.pad {
+        padding-bottom: 20px
+    }
+    p {
+        font-family: 'Spinnaker'
+    }
 }
