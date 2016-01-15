@@ -1,29 +1,18 @@
 import urllib as a
-import sys
-#url = "https://s3-us-west-2.amazonaws.com/tarunproject/acne.txt";
+url = "https://s3-us-west-2.amazonaws.com/tarunproj";
 #url = raw_input("enter url");
-url = "https://s3-us-west-2.amazonaws.com/tarunproject/sample.txt";
 b = a.urlopen(url); #getting file
 c = b.read(); #reading the file and string into a variable
-#c = "An Object is an entity that is represented by information in a collection or database. User queries are coordinated against the database data.Be that as it may, instead of traditional SQL questions of a database, in Information Retrieval the outcomes returned might possibly may not match query, so results are normally ranked. This ranking of results is a key distinction of Information Retrieval searching contrasted with database searching.";
 c = c.replace("\r","").replace("\r","").replace("\n",""); #replacing tab and new line chars
 import re 
 #d = re.findall("[a-zA-Z0-9!? ,'""*;:-]*[^.\\r\\n,]",c);
 d = c.split("."); #splitting the document by .
-e = [];
-for i in d:
-	e.append(i.strip());
-#print e;
-#print f;
+#print d;
 from sklearn.feature_extraction.text import TfidfVectorizer #importing dependecies
 from sklearn.metrics.pairwise import linear_kernel
 tfidf = TfidfVectorizer(); #creating a TfidfVectorizer object
-try:
-	tf = tfidf.fit_transform(e)  
-	mat = linear_kernel(tf,tf) #creating a matrix of frequency vectors
-except:
-	print("sorry");
-	sys.exit();	
+tf = tfidf.fit_transform(d)  
+mat = linear_kernel(tf,tf) #creating a matrix of frequency vectors
 import numpy
 m = numpy.array(mat).tolist(); #converting that to a list
 #print m;
