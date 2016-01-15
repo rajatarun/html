@@ -69,48 +69,92 @@
 	var photos = [
 		{
 			name:"nature1",
-			url:"https://s3.amazonaws.com/tarunblog/nature1.JPG"
-
+			url:"https://s3.amazonaws.com/tarunblog/nature1.JPG",
+			GPSAltitude: "403.0 m",
+			ShutterSpeedValue: "1/60 s",
+			FocalLength: "4.2 mm",
+			DateTimeDigitized: "2015:10:31 14:02:04",
+			ApertureValue: "F2.2"
 		},
 		{
 			name:"nature2",
-			url:"https://s3.amazonaws.com/tarunblog/nature2.JPG"
-
+			url:"https://s3.amazonaws.com/tarunblog/nature2.JPG",
+			ShutterSpeedValue: "1/30 s",
+			FocalLength: "4.2 mm",
+			DateTimeDigitized: "2015:09:26 19:09:10",
+			ApertureValue: "F2.2",
+			GPSAltitude: "443.4 m"
 		},
 		{
 			name:"nature3",
-			url:"https://s3.amazonaws.com/tarunblog/nature3.JPG"
+			url:"https://s3.amazonaws.com/tarunblog/nature3.JPG",
+			ShutterSpeedValue: "1/30 s",
+			FocalLength: "4.2 mm",
+			DateTimeDigitized: "2015:09:27 13:07:29",
+			ApertureValue: "F2.2",
 
 		},
 		{
 			name:"nature4",
-			url:"https://s3.amazonaws.com/tarunblog/nature4.JPG"
+			url:"https://s3.amazonaws.com/tarunblog/nature4.JPG",
+			ShutterSpeedValue: "1/15 s",
+			PixelXDimension: "3264",
+			FocalLength: "4.2 mm",
+			DateTimeDigitized: "2015:08:30 19:38:48",
+			ApertureValue: "F2.2",
+			GPSAltitude: "0 m"
+
 
 		},
 		{
 			name:"nature5",
-			url:"https://s3.amazonaws.com/tarunblog/nature5.JPG"
+			url:"https://s3.amazonaws.com/tarunblog/nature5.JPG",
+			ShutterSpeedValue: "1/1522 s",
+			PixelXDimension: "3264",
+			FocalLength: "4.2 mm",
+			DateTimeDigitized: "2015:10:11 15:30:48",
+			ApertureValue: "F2.2",
+			GPSAltitude: "403.6 m"
 
 		},
 		{
 			name:"nature6",
-			url:"https://s3.amazonaws.com/tarunblog/nature6.JPG"
+			url:"https://s3.amazonaws.com/tarunblog/nature6.JPG",
+			ShutterSpeedValue: '1/120 s',
+			FocalLength: '4.2 mm',
+			DateTimeDigitized: '2015:08:31 14:11:35',
+			ApertureValue: 'F2.2',
+			GPSAltitude: '253.8 m'
+
 
 		},	
 		{
 			name:"nature7",
-			url:"https://s3.amazonaws.com/tarunblog/nature7.JPG"
+			url:"https://s3.amazonaws.com/tarunblog/nature7.JPG",
+			ShutterSpeedValue: "1/30 s",
+			FocalLength: "4.2 mm",
+			DateTimeDigitized: "2015:10:28 18:17:45",
+			ApertureValue: "F2.2",
+			GPSAltitude: "268.0 m"
 
 		},
 		{
 			name:"nature8",
-			url:"https://s3.amazonaws.com/tarunblog/nature8.JPG"
+			url:"https://s3.amazonaws.com/tarunblog/nature8.JPG",
+			ShutterSpeedValue: "1/120 s",
+			FocalLength: "4.2 mm",
+			DateTimeDigitized: "2015:08:31 14:11:57",
+			ApertureValue: "F2.2",
+			GPSAltitude: "252.9 m"
 
 		},
 		{
 			name:"nature9",
-			url:"https://s3.amazonaws.com/tarunblog/nature9.JPG"
-
+			url:"https://s3.amazonaws.com/tarunblog/nature9.JPG",
+			ShutterSpeedValue: "1/30 s",
+			FocalLength: "4.2 mm",
+			DateTimeDigitized: "2015:09:20 18:52:04",
+			ApertureValue: "F2.2"
 		}																		
 	];
 	var mydata = {

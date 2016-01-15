@@ -31,6 +31,9 @@
   	.affix + .container-fluid {
       padding-top: 220px;
   }
+  .btn-pic{
+  	padding-bottom: 2px;
+  }
     .heading.photo {
         text-align: center;
         background-color: #FF7043
@@ -130,6 +133,9 @@
         text-align: center;
         background-color: #4285F4
     }
+    .btn-pic {
+  	padding-bottom: 2px;
+  	}
     .affix {
       top:0;
       width: 100%;
@@ -253,6 +259,9 @@
         text-align: center;
         background-color: #4285F4
     }
+    .btn-pic{
+  	padding-bottom: 2px;
+  }
     .affix {
       top:0;
       width: 100%;
@@ -376,6 +385,9 @@
         text-align: center;
         background-color: #4285F4
     }
+    .btn-pic{
+  	padding-bottom: 2px;
+  }
     .affix + .container-fluid {
       padding-top: 220px;
   }

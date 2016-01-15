@@ -8,7 +8,7 @@
     <div ng-controller="CssController as css">
         <link rel="stylesheet" type="text/css" ng-href="{{css.product.boot}}">
         <link rel="stylesheet" type="text/css" ng-href="{{css.product.my}}">
-        
+
     </div>
     <!-- font controller start -->
     <div ng-controller="FontController as fc">
@@ -57,7 +57,7 @@
         </div>
         <!-- end of breadcrumb -->
         <div ng-controller="PhotoController as pic">
-            <div class="row gallery">
+            <!-- <div class="row gallery">
                 <div ng-repeat="p in pic.product | limitTo:3">
                     <div class="col-xs-1 col-md-3 photos">
                         <a ng-href={{p.url}}><img class="img-responsive img-gallery" ng-src={{p.url}} width="100%" height="100%">
@@ -94,6 +94,47 @@
                 </div>
 
 
+            </div>-->
+            <div class="media" ng-repeat="pic in pic.product">
+                <div class="row">
+                <div class="media-left media-middle">
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-3">
+                    <div class="media-object">
+                        <a href="">
+                            <img class="thumbnail " ng-src={{pic.url}} width="320px" height ="280px">
+                        </a>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                    <div class="media-body">
+
+                        
+                               <div class="list">
+                                    <div class="list-group-item">
+                                     <button class="btn btn-primary btn-pic">ShutterSpeedValue: <span class="badge">{{pic.ShutterSpeedValue}}</span></button>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <button class="btn btn-primary btn-pic">FocalLength: <span class="badge">{{pic.FocalLength}}</span></button>
+                                    </div>
+                                    <!--<div class="">
+                                        <h3> <span class="label label-info">DateTime: </span></h3><span class="badge">{{pic.DateTimeDigitized|date:'MM/dd/yyyy'}}</span>
+                                    </div>-->
+                                    <div class="list-group-item">
+                                        <button class="btn btn-primary btn-pic">ApertureValue:   <span class="badge">{{pic.ApertureValue}}</span></button>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <button class="btn btn-primary btn-pic">GPSAltitude:  <span class="badge">{{pic.GPSAltitude}}</span></button>
+                                    </div>
+                                    
+                               </div>   
+                        
+                    </div>
+                    </div>
+                    
+                </div>
+                </div>
             </div>
         </div>
     </div>
