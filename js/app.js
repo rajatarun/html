@@ -208,6 +208,7 @@
 					"fh":"https://fonts.googleapis.com/css?family=Spinnaker",
 					"fi":"https://fonts.googleapis.com/css?family=Roboto+Condensed"
 					};
+  	var usercomments = [];
 	var mywork = {
 		email:"rajatarun12@gmail.com",
 		linkedin:"https://www.linkedin.com/in/tarunraja1",
@@ -226,6 +227,24 @@
    		}
 
 	});
+
+   	app.controller('FormController', function($scope) {
+     $scope.master= {};
+
+     $scope.update = function(user) {
+       // Example with 1 argument
+       $scope.master= $scope.master.push({user:$scope.user.name});
+     };
+     var masterget=function(){
+     	return master;
+     };
+     $scope.reset = function() {
+       // Example with 2 arguments
+       $scope.user = angular.copy($scope.master);
+     };
+
+     $scope.reset();
+   });
 	app.controller("VideoController",function($scope,$http){
 		$http.get("https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,player,statistics&chart=mostPopular&key=AIzaSyDjP5XAHXD4VfjbfpAzK5n3RB5sp0xl7KM")
    		.success(function (response) {
