@@ -220,6 +220,10 @@
    		.success(function (response) {$scope.names = response.records;
    			$scope.data = response;});
    		this.product = career;
+   		$scope.singleSelect = 'title';
+   		$scope.select = function(){
+   			return $scope.singleSelect;
+   		}
 
 	});
 	app.controller("VideoController",function($scope,$http){
