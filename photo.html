@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="store">
+<html  ng-app="store">
 
 <head class="container">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -8,6 +8,7 @@
     <div ng-controller="CssController as css">
         <link rel="stylesheet" type="text/css" ng-href="{{css.product.boot}}">
         <link rel="stylesheet" type="text/css" ng-href="{{css.product.my}}">
+        
     </div>
     <!-- font controller start -->
     <div ng-controller="FontController as fc">
@@ -25,7 +26,7 @@
     </div>
 </head>
 
-<body ng-controller="StoreController as store">
+<body class="photohtml" ng-controller="StoreController as store">
     <!-- start of nav bar -->
     <div class="body">
         <nav class="navbar mynav" ng-controller="NavController as nav">

@@ -29,17 +29,19 @@
             <button class="btn btn-default pull-right">Register</button>
         </div>
     </div>
+    
+</head>
+
+<body ng-controller="StoreController as store">
+    <div class="affix">
     <div class="col-md-12 heading heading-fixed index" ng-controller="HeadingController as head">
         <!--<hr> -->
         <h1 class="mainheading">{{head.product.heading | uppercase}}</h1>
     </div>
-</head>
-
-<body ng-controller="StoreController as store">
     <!-- start of nav bar -->
     <div class="navbar-fixed">
         <div class="body">
-            <nav class="navbar mynav" ng-controller="NavController as nav">
+            <nav class="navbar mynav " data-spy="affix" data-offset-top="197" ng-controller="NavController as nav">
                 <!-- / start collapsed navbar -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my_navbar" aria-expanded="false">
@@ -65,6 +67,9 @@
             </div>
             <!-- end of breadcrumb -->
         </div>
+     </div>
+     </div>   
+        <div div class="container-fluid">
         <!-- News Article Start-->
         <div class="row">
             <div class="col-xs-1 col-md-1">
