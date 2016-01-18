@@ -217,13 +217,17 @@
 	};
 
 	app.controller("NewsController",function($scope,$http){
-		$http.get("http://api.nytimes.com/svc/news/v3/content/all/world/1.json?limit=3&api-key=14ffa0c3d5869d898956dbae65bd5601%3A4%3A72071069")
+		$http.get("http://api.nytimes.com/svc/news/v3/content/all/world/1.json?limit=50&api-key=14ffa0c3d5869d898956dbae65bd5601%3A4%3A72071069")
    		.success(function (response) {$scope.names = response.records;
    			$scope.data = response;});
    		this.product = career;
    		$scope.singleSelect = 'title';
    		$scope.select = function(){
    			return $scope.singleSelect;
+   		};
+   		$scope.count = 0;
+   		$scope.getCount = function(){
+   			return $scope.count();
    		}
 
 	});

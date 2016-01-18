@@ -80,10 +80,10 @@
             </div>
 
         </div>
-        <div ng-controller="NewsController as nc">
-            <div class="row">
-                <div ng-repeat="x in data.results" class="row articles">
-
+        <div ng-controller="NewsController as nc" id ="news" ng-init="count=0">
+            
+                <div ng-repeat="x in data.results.slice(count*3,count*3+3)" class="row articles">
+                    <div class="row">
                     <div class="media">
                         <div class="media-left media-middle">
                             <div class="media-object">
@@ -130,6 +130,28 @@
 
 
                 </div>
+            </div>
+            <div class="row">
+             <div class="col-md-5"> 
+             
+             </div>   
+            <div class="btn-toolbar col-md-3" role="toolbar" aria-label="..." >
+                <div class="btn-group" role="group" aria-label="..." data-target="#news" ng-click="count=0">
+                    <button class="btn btn-default">1</button>
+                </div>
+                <div class="btn-group" role="group" aria-label="..." data-target="#news" ng-click="count=1">
+                    <button class="btn btn-default">2</button>
+                </div>
+                <div class="btn-group" role="group" aria-label="..." data-target="#news" ng-click="count=2">
+                    <button class="btn btn-default">3</button>
+                </div>
+                <div class="btn-group" role="group" aria-label="..." data-target="#news" ng-click="count=3">
+                    <button class="btn btn-default">4</button>
+                </div>
+                <div class="btn-group" role="group" aria-label="..." data-target="#news" ng-click="count=4">
+                    <button class="btn btn-default">5</button>
+                </div>
+            </div>
             </div>
         </div>
 
