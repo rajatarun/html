@@ -6,7 +6,12 @@
 
     <title>TARUNBLOG | STUDENTCONNECT</title>
     </div>
+    <style>
+        [ng-cloak]{
+            display:none;
+        }
 
+    </style>
     <div ng-controller="CssController as css">
         <link rel="stylesheet" type="text/css" ng-href="{{css.product.boot}}">
         <link rel="stylesheet" type="text/css" ng-href="{{css.product.my}}">
@@ -32,7 +37,7 @@
     
 </head>
 
-<body ng-controller="StoreController as store">
+<body ng-controller="StoreController as store" ng-cloak>
     <div class="affix">
     <div class="col-md-12 heading heading-fixed index" ng-controller="HeadingController as head">
         <!--<hr> -->
@@ -82,7 +87,7 @@
         </div>
         <div ng-controller="NewsController as nc" id ="news" ng-init="count=0">
             
-                <div ng-repeat="x in data.results.slice(count*3,count*3+3)" class="row articles">
+                <div ng-repeat="x in data.results.slice(count*3,(count*3)+3)" class="row articles">
                     <div class="row">
                     <div class="media">
                         <div class="media-left media-middle">
@@ -97,7 +102,7 @@
                                 </a>
                             </div>
                             <div class="media-body">
-                                <div class="col-md-11 col-xs-11 newsarticle">
+                                <div class="col-md-8 col-xs-8 newsarticle">
                                     <blockquote>
                                         <h4><a ng-href="{{x.url}}">{{x.title | uppercase}}</a></h4>
                                         <p>{{x.abstract}}</p>

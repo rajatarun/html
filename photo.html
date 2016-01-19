@@ -10,6 +10,12 @@
         <link rel="stylesheet" type="text/css" ng-href="{{css.product.my}}">
 
     </div>
+    <style>
+        [ng-cloak]{
+            display:none;
+        }
+
+    </style>
     <!-- font controller start -->
     <div ng-controller="FontController as fc">
         <link ng-href={{fc.product}} rel='stylesheet' type='text/css'>
@@ -26,7 +32,7 @@
     </div>
 </head>
 
-<body class="photohtml" ng-controller="StoreController as store">
+<body class="photohtml" ng-controller="StoreController as store" ng-cloak>
     <!-- start of nav bar -->
     <div class="body">
         <nav class="navbar mynav" ng-controller="NavController as nav">
