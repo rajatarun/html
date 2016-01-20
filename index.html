@@ -5,76 +5,76 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <title>TARUNBLOG | STUDENTCONNECT</title>
-    </div>
-    <style>
-        [ng-cloak]{
-            display:none;
-        }
+</div>
+<style>
+[ng-cloak]{
+    display:none;
+}
 
-    </style>
-    <div ng-controller="CssController as css">
-        <link rel="stylesheet" type="text/css" ng-href="{{css.product.boot}}">
-        <link rel="stylesheet" type="text/css" ng-href="{{css.product.my}}">
+</style>
+<div ng-controller="CssController as css">
+    <link rel="stylesheet" type="text/css" ng-href="{{css.product.boot}}">
+    <link rel="stylesheet" type="text/css" ng-href="{{css.product.my}}">
 
-    </div>
-    <!-- font controller start -->
-    <div ng-controller="FontController as fc">
-        <link ng-href={{fc.product}} rel='stylesheet' type='text/css'>
-    </div>
-    <div ng-controller="BodyFontController as fc">
-        <link ng-href={{fc.product.fh}} rel='stylesheet' type='text/css'>
-        <link ng-href={{fc.product.ff}} rel='stylesheet' type='text/css'>
-    </div>
-    <!-- font controller end -->
+</div>
+<!-- font controller start -->
+<div ng-controller="FontController as fc">
+    <link ng-href={{fc.product}} rel='stylesheet' type='text/css'>
+</div>
+<div ng-controller="BodyFontController as fc">
+    <link ng-href={{fc.product.fh}} rel='stylesheet' type='text/css'>
+    <link ng-href={{fc.product.ff}} rel='stylesheet' type='text/css'>
+</div>
+<!-- font controller end -->
 
-    <!--<div class="row loginbutton">
-        <div class="col-md-10"></div>
-        <div class="col-md-2 btn-group login" type="button" role="group">
-            <button class="btn btn-default pull-right">Login</button>
-            <button class="btn btn-default pull-right">Register</button>
-        </div>
-    </div>-->
-    
+<!--<div class="row loginbutton">
+<div class="col-md-10"></div>
+<div class="col-md-2 btn-group login" type="button" role="group">
+<button class="btn btn-default pull-right">Login</button>
+<button class="btn btn-default pull-right">Register</button>
+</div>
+</div>-->
+
 </head>
 
 <body ng-controller="StoreController as store" ng-cloak>
     <div class=""> <!-- put class as affix to fix the heading at top-->
-    <div class="col-md-12 heading heading-fixed index" ng-controller="HeadingController as head">
-        <!--<hr> -->
-        <h1 class="mainheading">{{head.product.heading | uppercase}}</h1>
-    </div>
-    <!-- start of nav bar -->
-    <div class="navbar-fixed">
-        <div class="body">
-            <nav class="navbar mynav " data-spy="affix" data-offset-top="197" ng-controller="NavController as nav">
-                <!-- / start collapsed navbar -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my_navbar" aria-expanded="false">
-                        hello!
-                    </button>
-                </div>
-                <!-- / collapsed navbar -->
-                <div class="collapse navbar-collapse" id="my_navbar">
-                    <ul class="nav navbar-nav" ng-repeat="ls in nav.product">
-                        <li class="active index">
-                            <a class="toplist" ng-href="{{ls.url}}">{{ls.name}}</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <!-- end of nav bar -->
-            <!-- start of breadcrumb -->
-            <div class="container">
-                <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a>
-                    </li>
-                </ol>
-            </div>
-            <!-- end of breadcrumb -->
+        <div class="col-md-12 heading heading-fixed index" ng-controller="HeadingController as head">
+            <!--<hr> -->
+            <h1 class="mainheading">{{head.product.heading | uppercase}}</h1>
         </div>
-     </div>
-     </div>   
-        <div div class="container-fluid">
+        <!-- start of nav bar -->
+        <div class="navbar-fixed">
+            <div class="body">
+                <nav class="navbar mynav " data-spy="affix" data-offset-top="197" ng-controller="NavController as nav">
+                    <!-- / start collapsed navbar -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my_navbar" aria-expanded="false">
+                            hello!
+                        </button>
+                    </div>
+                    <!-- / collapsed navbar -->
+                    <div class="collapse navbar-collapse" id="my_navbar">
+                        <ul class="nav navbar-nav" ng-repeat="ls in nav.product">
+                            <li class="active index">
+                                <a class="toplist" ng-href="{{ls.url}}">{{ls.name}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- end of nav bar -->
+                <!-- start of breadcrumb -->
+                <div class="container">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Home</a>
+                        </li>
+                    </ol>
+                </div>
+                <!-- end of breadcrumb -->
+            </div>
+        </div>
+    </div>   
+    <div div class="container-fluid">
         <!-- News Article Start-->
         <div class="row">
             <div class="col-xs-1 col-md-1">
@@ -86,23 +86,25 @@
 
         </div>
         <div ng-controller="NewsController as nc" id ="news" ng-init="count=0">
-            
-                <div ng-repeat="x in data.results.slice(count*3,(count*3)+3)" class="row articles">
-                    <div class="row">
-                    <div class="media">
-                        <div class="media-left media-middle">
-                            <div class="media-object">
-                                <a href="#">
-                                    <div class="col-xs-1 col-md-1">
+            <div>
+            <div class="col-xs-1 col-md-1">
 
-                                    </div>
-                                    <div class="col-xs-2 col-md-2 thumbnail">
+            </div>
+            <div class="col-md-8">
+                <div ng-repeat="x in data.results | filter:key | limitTo:3" class="row articles"> <!-- .slice(count*3,(count*3)+3) -->
+                    <div class="row">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <div class="col-md-3">
+                                <div class="media-object">
+                                    <a href="#">
                                         <img ng-src="{{x.multimedia[1].url}}" width="100%" height="100%">
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <div class="col-md-8 col-xs-8 newsarticle">
+                                    </a>
+                                </div>
+                                </div>
+                                <div class="col-md-8">
+                                <div class="media-body">
+
                                     <blockquote>
                                         <h4><a ng-href="{{x.url}}">{{x.title | uppercase}}</a></h4>
                                         <p>{{x.abstract}}</p>
@@ -115,49 +117,51 @@
                                         </div>
                                         <footer>{{x.created_date | date:'MM/dd/yyyy @ h:mma'}}</footer>
                                     </blockquote>
+
+
+
+                                </div>
                                 </div>
 
-                                <div class="col-md-1 col-xs-1">
-
-                                </div>
                             </div>
-
                         </div>
+
                     </div>
-                    <!-- <div class="col-xs-2 col-md-2 imgart">
-<img ng-src="{{x.multimedia[1].url}}" width="100%" height = "100%">
-
-</div>  
-<div class = "col-md-3 col-xs-3 newsarticle" >
-<h4><a ng-href="{{x.url}}">{{x.title | uppercase}}</a></h4>
-<p>{{x.abstract}}</p>
-</div> -->
-
-
                 </div>
             </div>
-            <div class="row">
-             <div class="col-md-5"> 
-             
-             </div>   
-            <div class="btn-toolbar col-md-3" role="toolbar" aria-label="..." >
-                <div class="btn-group" role="group" aria-label="..." data-target="#news" ng-click="count=0">
-                    <button class="btn btn-default">1</button>
-                </div>
-                <div class="btn-group" role="group" aria-label="..." data-target="#news" ng-click="count=1">
-                    <button class="btn btn-default">2</button>
-                </div>
-                <div class="btn-group" role="group" aria-label="..." data-target="#news" ng-click="count=2">
-                    <button class="btn btn-default">3</button>
-                </div>
-                <div class="btn-group" role="group" aria-label="..." data-target="#news" ng-click="count=3">
-                    <button class="btn btn-default">4</button>
-                </div>
-                <div class="btn-group" role="group" aria-label="..." data-target="#news" ng-click="count=4">
-                    <button class="btn btn-default">5</button>
-                </div>
+            <div class="col-md-2 col-xs-2">
+                    <h4>Search </h4>
+                    <input type="text" class="form-control" ng-model="key">
+                    <h4>Popular Searches: </h4>
+                    <div ng-repeat="x in data.results | limitTo:20">
+                       <h4><span class="label label-primary" ng-click="key=x.geo_facet[0]">{{x.geo_facet[0]}}</span></h4>
+
+                    </div>   
             </div>
             </div>
+            <!-- <div class="row">
+                <div class="col-md-5"> 
+
+                </div>   
+                <div class="btn-toolbar col-md-3" role="toolbar" aria-label="..." >
+                    <div class="btn-group" role="group" aria-label="..." data-target="#news" ng-click="count=0">
+                        <button class="btn btn-default">1</button>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="..." data-target="#news" ng-click="count=1">
+                        <button class="btn btn-default">2</button>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="..." data-target="#news" ng-click="count=2">
+                        <button class="btn btn-default">3</button>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="..." data-target="#news" ng-click="count=3">
+                        <button class="btn btn-default">4</button>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="..." data-target="#news" ng-click="count=4">
+                        <button class="btn btn-default">5</button>
+                    </div>
+                </div>
+            </div>-->
+
         </div>
 
         <!-- News Article End-->
