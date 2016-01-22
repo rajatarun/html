@@ -104,34 +104,43 @@
             
         </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" ng-controller="CalcController">
                 <input type="text" ng-model="value" ng-value = "value" class="form-control row">
                 <hr />
                 <div class="row">
-                    <div class="col-md-2"><h4><input type="submit" ng-click="val(1)" class="btn btn-default">1</button></h4></div>
+                    <div class="col-md-2"><h4><input type="submit" value="1"  ng-click="val(1)" class="btn btn-default"></button></h4></div>
                     
-                    <div class="col-md-2"><h4><input type="submit" ng-click="val(2)" class="btn btn-default">2</button></h4></div>
+                    <div class="col-md-2"><h4><input type="submit" value="2"  ng-click="val(2)" class="btn btn-default"></button></h4></div>
                     
-                    <div class="col-md-2"><h4><input type="submit" ng-click="val(3)" class="btn btn-default">3</button></h4></div>
-                    <div class="col-md-2"><h4><input type="submit" ng-click="val(+)" class="btn btn-default">+</button></h4></div>
-                    
-                </div>
-                <div class="row">
-                    <div class="col-md-2"><h4><input type="submit" ng-click="val(4)" class="btn btn-default">4</button></h4></div>
-                    
-                    <div class="col-md-2"><h4><input type="submit" ng-click="val(5)" class="btn btn-default">5</button></h4></div>
-                    
-                    <div class="col-md-2"><h4><input type="submit" ng-click="val(6)" class="btn btn-default">6</button></h4></div>
-                    <div class="col-md-2"><h4><input type="submit" ng-click="val(-)" class="btn btn-default">-</button></h4></div>
+                    <div class="col-md-2"><h4><input type="submit" value="3"  ng-click="val(3)" class="btn btn-default"></button></h4></div>
+                    <div class="col-md-2"><h4><input type="submit" value="+"  ng-click="val('+')" class="btn btn-default"></button></h4></div>
                     
                 </div>
                 <div class="row">
-                    <div class="col-md-2"><h4><input type="submit" ng-click="val(7)" class="btn btn-default">7</button></h4></div>
+                    <div class="col-md-2"><h4><input type="submit" value="4"  ng-click="val(4)" class="btn btn-default"></button></h4></div>
                     
-                    <div class="col-md-2"><h4><input type="submit" ng-click="val(8)" class="btn btn-default">8</button></h4></div>
+                    <div class="col-md-2"><h4><input type="submit" value="5"  ng-click="val(5)" class="btn btn-default"></button></h4></div>
+                    
+                    <div class="col-md-2"><h4><input type="submit" value="6"  ng-click="val(6)" class="btn btn-default"></button></h4></div>
+                    <div class="col-md-2"><h4><input type="submit" value="-"  ng-click="val('-')" class="btn btn-default"></button></h4></div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-md-2"><h4><input type="submit" value="7" ng-click="val(7)" class="btn btn-default"></button></h4></div>
+                    
+                    <div class="col-md-2"><h4><input type="submit" value="8"  ng-click="val(8)" class="btn btn-default"></button></h4></div>
                    
-                    <div class="col-md-2"><h4><input type="submit" ng-click="val(9)" class="btn btn-default">9</button></h4></div>
-                    <div class="col-md-2"><h4><input type="submit" ng-click="val(*)" class="btn btn-default">*</button></h4></div>
+                    <div class="col-md-2"><h4><input type="submit" value="9"  ng-click="val(9)" class="btn btn-default"></button></h4></div>
+                    <div class="col-md-2"><h4><input type="submit" value="*"  ng-click="val('*')" class="btn btn-default"></button></h4></div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-md-2"><h4><input type="submit" value="C" ng-click="val('C')" class="btn btn-default"></button></h4></div>
+                    
+                    <div class="col-md-2"><h4><input type="submit" value="0"  ng-click="val(0)" class="btn btn-default"></button></h4></div>
+                   
+                    <div class="col-md-2"><h4><input type="submit" value="/"  ng-click="val('/')" class="btn btn-default"></button></h4></div>
+                    <div class="col-md-2"><h4><input type="submit" value="="  ng-click="val('=')" class="btn btn-default"></button></h4></div>
                     
                 </div>
                 </div>

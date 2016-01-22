@@ -292,10 +292,21 @@
 	app.controller("StoreController",function(){
 		this.product = gem;
 	});
-	app.controller("CalcController",function($scope){
+	app.controller("CalcController",function($scope,$parse){
+		$scope.value = '';
 		$scope.val = function(inp){
-			$scope.value += inp.toString();
+			if (inp==='=') {
+				var a = $parse($scope.value);
+				$scope.value = a();
+
+			}
+			else if (inp==='C') {
+				$scope.value='';
+			}
+			else{
+			$scope.value += inp.toString();}
 		}
+		
 	});
 
 
