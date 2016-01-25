@@ -48,19 +48,22 @@
             <div class="body">
                 <nav class="navbar mynav " data-spy="affix" data-offset-top="197" ng-controller="NavController as nav">
                     <!-- / start collapsed navbar -->
-                    <div class="navbar-header">
+                    <!-- <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my_navbar" aria-expanded="false">
                             hello!
                         </button>
                     </div>
                     <!-- / collapsed navbar -->
-                    <div class="collapse navbar-collapse" id="my_navbar">
+                     <!--<div class="collapse navbar-collapse" id="my_navbar">
                         <ul class="nav navbar-nav" ng-repeat="ls in nav.product">
                             <li class="active index">
                                 <a class="toplist" ng-href="{{ls.url}}">{{ls.name}}</a>
                             </li>
                         </ul>
-                    </div>
+                    </div>--> 
+
+                    <mynav>
+                    </mynav>
                 </nav>
                 <!-- end of nav bar -->
                 <!-- start of breadcrumb -->
@@ -270,8 +273,9 @@
     <!-- end of footer -->
     <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
-    <script type="text/javascript" src="bower_components\bootstrap\dist\js\bootstrap.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components\bootstrap\dist\js\bootstrap.min.js"></script>
+    
 
 </body>
 

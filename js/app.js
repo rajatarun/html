@@ -232,6 +232,13 @@
 
 	});
 
+	app.directive("mynav",function(){
+			return {
+				templateUrl:'my-nav.html'
+
+			};
+		});
+
    	app.controller('FormController', function($scope) {
      $scope.master= {};
 

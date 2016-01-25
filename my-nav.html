@@ -1,0 +1,13 @@
+<div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my_navbar" aria-expanded="false">
+                            hello!
+                        </button>
+                    </div>
+                    <!-- / collapsed navbar -->
+                     <div class="collapse navbar-collapse" id="my_navbar">
+                        <ul class="nav navbar-nav" ng-repeat="ls in nav.product">
+                            <li class="active index">
+                                <a class="toplist" ng-href="{{ls.url}}">{{ls.name}}</a>
+                            </li>
+                        </ul>
+                    </div> 
