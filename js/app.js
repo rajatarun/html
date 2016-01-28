@@ -342,7 +342,22 @@
 				return $http.get(url).then(function(response){
     				return response.data;
 				});	
+			},
+			getTourism:function(id){
+				var url = "http://api.geonames.org/childrenJSON?geonameId="+id+"&username=demo&hierarchy=tourism";
+				
+				return $http.get(url).then(function(response){
+    				return response.data;
+				});		
+			},
+			getNeighbours:function(id){
+				var url = "http://api.geonames.org/neighboursJSON?geonameId="+id+"&username=rajatarun12";
+				
+				return $http.get(url).then(function(response){
+    				return response.data;
+				});		
 			}
+
 		}
 	});
 	
@@ -354,7 +369,7 @@
 
 				});
 			}
-			$scope.details = function(lat,lng){
+			$scope.details = function(lat,lng,id,cid){
 				console.log(lat,lng);
 				httpService.getWeather(lat,lng).then(function(response){
 				$scope.data2=response;
@@ -363,7 +378,13 @@
 				httpService.getWiki(lat,lng).then(function(response){
 				$scope.data3=response;
 
-				});	
+				});
+				httpService.getTourism(id).then(function(response){
+				$scope.data4=response;
+				});		
+				httpService.getNeighbours(cid).then(function(response){
+				$scope.data5=response;
+				});		
 			}
 
 
