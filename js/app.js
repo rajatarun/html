@@ -315,6 +315,51 @@
 		}
 		
 	});
+	app.factory("httpService",function($http){
+		return{
+			getCity:function(name){
+				return $http.get("http://api.geonames.org/searchJSON?name_startsWith="+name+"&maxRows=5&username=rajatarun12").then(function(response){
+    				return response.data;
+				});
+			},
+			getWeather:function(lng,lat){
+				var url = "http://api.geonames.org/findNearByWeatherJSON?lat="+''+lng+"&lng="+''+lat+"&username=rajatarun12";
+				console.log(url);
+				return $http.get(url).then(function(response){
+    				return response.data;
+				});
+			},
+			getWiki:function(lat,lng){
+				var url = "http://api.geonames.org/findNearbyWikipediaJSON?lat="+lat+"&lng="+lng+"&username=rajatarun12";
+				console.log(url);
+				return $http.get(url).then(function(response){
+    				return response.data;
+				});	
+			}
+		}
+	});
+	app.controller("CityController",function($scope,httpService){
+			$scope.city='';
+			$scope.call = function(){
+				httpService.getCity($scope.city).then(function(response){
+				$scope.data1=response;
+
+				});
+			}
+			$scope.details = function(lat,lng){
+				console.log(lat,lng);
+				httpService.getWeather(lat,lng).then(function(response){
+				$scope.data2=response;
+
+				});	
+				httpService.getWiki(lat,lng).then(function(response){
+				$scope.data3=response;
+
+				});	
+			}
+
+
+	});
 
 
 })();

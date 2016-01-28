@@ -2,6 +2,9 @@
     .heading {
         background-color: #4285F4
     }
+    #des{
+        border-top: 20px;
+    }
     body.photohtml{
     	background-image: "images/nature2.JPG"
     }
@@ -141,6 +144,9 @@
         text-align: center;
         background-color: #4285F4
     }
+    #des{
+       border-top: 20px;
+    }
     .btn-pic {
   	padding-bottom: 2px;
   	}
@@ -275,6 +281,9 @@
         text-align: center;
         background-color: #4285F4
     }
+    #des{
+        border-top: 20px;
+    }
     .btn-pic{
   	padding-bottom: 2px;
   }
@@ -408,6 +417,9 @@
     .heading.index {
         text-align: center;
         background-color: #4285F4
+    }
+    #des{
+        border-top: 20px;
     }
     .btn-pic{
   	padding-bottom: 2px;

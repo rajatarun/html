@@ -70,23 +70,22 @@
         <div ng-controller = "NewsController as nc" >
             
                 <ul class="list-inline">
-                <div class="row">    
-                <div class="col-xs-1 col-md-1">
-                </div>   
-                <div class="col-xs-3 col-md-3" >
-                    <li><h4><strong>Career Articles</strong></h4></li>
-                </div>
-                <div class="col-xs-2 col-md-2 ">
-                    <li><h4>SortBy:</h4></li>
-                </div>
-                <div class="col-xs-4 col-md-4 pull-left" ng-init="singleSelect='title'">
-                    <li >
-                    <select class= "form-control"  name="singleSelect" ng-model="singleSelect" >
+                <div class="row">
+                <div class="col-md-1"></div>       
+                <div><div class="col-xs-10 col-md-10 page-header"  ng-init="singleSelect='title'" >
+                    <div class="col-md-6">
+                    <h1>Career Articles
+                    
+                    </div>
+                    <div class="col-md-6">
+                    <label for="des"><small><li><h4>SortBy:</h4></li></small></label></h1>
+                    <li>
+                    <select id="des" class= "form-control"  name="singleSelect" ng-model="singleSelect" >
                             <option value='title'>Title</option>
                             <option value='content'>Description</option>
                     </select>
-                </li>
-                </div>
+                    </li>
+                </div></div></div>    
                 </div>
                 </ul>
             
@@ -104,13 +103,21 @@
             
         </div>
         </div>
+
+        <!-- start of calculator -->
         <div class="col-md-4" ng-controller="CalcController">
-                <div class="row"><h3>Calculator</h3></div>
-                <hr />
+
+                <div class="row page-header"><h1>Calculator</h1></div>
+                <br>
+                <br>
                 <div class="row">
                     <div class="col-md-push-1 col-xs-1"></div>
-                <div class="col-md-11 col-xs-11 pull-left "><input type="text" ng-model="value" ng-value = "value" class="form-control row"></div></div>
+                <div class="col-md-11 col-xs-11 pull-left "><input readonly type="text" ng-model="value" ng-value = "value" class="form-control row"></div></div>
+                <br>
                 <hr />
+                <br>
+                <br>
+                <br>
                 <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-2"><h4><input type="submit" value="1"  ng-click="val(1)" class="btn btn-default"></button></h4></div>
@@ -118,7 +125,7 @@
                     <div class="col-md-2"><h4><input type="submit" value="2"  ng-click="val(2)" class="btn btn-default"></button></h4></div>
                     
                     <div class="col-md-2"><h4><input type="submit" value="3"  ng-click="val(3)" class="btn btn-default"></button></h4></div>
-                    <div class="col-md-2"><h4><input type="submit" value="+"  ng-click="val('+')" class="btn btn-default"></button></h4></div>
+                    <div class="col-md-2"><h4><input type="submit" value="Add"  ng-click="val('+')" class="btn btn-default"></button></h4></div>
                     
                 </div>
                 <div class="row">
@@ -128,17 +135,17 @@
                     <div class="col-md-2"><h4><input type="submit" value="5"  ng-click="val(5)" class="btn btn-default"></button></h4></div>
                     
                     <div class="col-md-2"><h4><input type="submit" value="6"  ng-click="val(6)" class="btn btn-default"></button></h4></div>
-                    <div class="col-md-2"><h4><input type="submit" value="-"  ng-click="val('-')" class="btn btn-default"></button></h4></div>
+                    <div class="col-md-2"><h4><input type="submit" value="Sub"  ng-click="val('-')" class="btn btn-default"></button></h4></div>
                     
                 </div>
                 <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-2"><h4><input type="submit" value="7" ng-click="val(7)" class="btn btn-default"></button></h4></div>
-                    
+                
                     <div class="col-md-2"><h4><input type="submit" value="8"  ng-click="val(8)" class="btn btn-default"></button></h4></div>
                    
                     <div class="col-md-2"><h4><input type="submit" value="9"  ng-click="val(9)" class="btn btn-default"></button></h4></div>
-                    <div class="col-md-2"><h4><input type="submit" value="*"  ng-click="val('*')" class="btn btn-default"></button></h4></div>
+                    <div class="col-md-2"><h4><input type="submit" value="Mul"  ng-click="val('*')" class="btn btn-default"></button></h4></div>
                     
                 </div>
                 <div class="row">
@@ -147,13 +154,120 @@
                     
                     <div class="col-md-2"><h4><input type="submit" value="0"  ng-click="val(0)" class="btn btn-default"></button></h4></div>
                    
-                    <div class="col-md-2"><h4><input type="submit" value="/"  ng-click="val('/')" class="btn btn-default"></button></h4></div>
-                    <div class="col-md-2"><h4><input type="submit" value="="  ng-click="val('=')" class="btn btn-default"></button></h4></div>
+                    <div class="col-md-2"><h4><input type="submit" value="Div"  ng-click="val('/')" class="btn btn-default"></button></h4></div>
+                    <div class="col-md-2"><h4><input type="submit" value="Equals"  ng-click="val('=')" class="btn btn-default"></button></h4></div>
                     
                 </div>
                 </div>
         </div>
+        <!-- end of calculator -->
 
+        <br>
+
+        <div class="row" ng-controller="CityController">
+            <div class="col-md-1"></div>
+            <div class="col-md-5" >
+                <div class="row">
+                    <div class="col-md-1 col-xs-1"></div>
+                    <div class="col-md-10 col-xs-10">
+                        <div class="page-header">
+                        <h1>
+                            Weather
+                        </h1>
+                        </div>  
+                        <hr />
+                        <form class="form-group">
+                            <label for="city"><h3><span>Enter a City Name</span></h3></label>
+                            <input class="form-control" id="city" type="text" ng-model="city" ng-keypress="call()">
+                        </form>
+                    </div>
+                    <div class="col-md-1 col-xs-1"></div>    
+                </div>
+
+                <div ng-repeat="i in data1.geonames | limitTo:1">
+                <div class="row" ng-init="showdetails=false">
+                    <div class="col-md-1 col-xs-1"></div>
+                    <div class="media col-md-10 col-xs-10">
+                        <div class="media-left">
+                            <div class="media-body">
+                                <blockquote>
+                                <div class="row">
+                                    <div class="col-md-11">
+                                <h4>{{i.toponymName}}</h4>
+                                <div ng-show="showdetails">
+                                    <h4 class="row">
+                                    <div class="col-md-1"></div>
+                                    countryName: {{i.countryName}}
+                                    </h4>
+                                    <h4 class="row">
+                                    <div class="col-md-1"></div>
+                                    population: {{i.population}}
+                                    </h4>
+                                    <h4 class="row">
+                                    <div class="col-md-1"></div>
+                                    Weather: {{data2.weatherObservation.temperature}}<sup>o</sup>C
+                                    </h4>
+                                    <h4 class="row">
+                                    <div class="col-md-1"></div>
+                                    Clouds: {{data2.weatherObservation.clouds}}
+                                    </h4>
+                                    <h4 class="row">
+                                    <div class="col-md-1"></div>
+                                    windSpeed: {{data2.weatherObservation.windSpeed}} mph
+                                    </h4>
+                                    <h4 class="row">
+                                    <div class="col-md-1"></div>
+                                    dewPoint: {{data2.weatherObservation.dewPoint}}<sup>o</sup>C
+                                    </h4>
+
+                                </div>
+                                    </div>
+                                <div class="col-md-1">
+                                <span>
+                                    <a ng-click="details(i.lat,i.lng);showdetails=!showdetails" class="icon">
+                                        <span class="glyphicon glyphicon-chevron-down"></span>
+                                    </a>
+                                </span>
+                                </div>
+                                </div>
+                                
+                                </blockquote>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+
+                </div>
+                </div>
+            </div>
+            <div class="col-md-5 ">
+                <div class="page-header">
+                    <h1>Nearby Places</h1>
+                </div>
+                <div class="row well" ng-repeat="i in data3.geonames">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <div class="media-body">
+                                <div class="row">
+                                <div class="col-md-8">
+                                <a ng-href={{i.wikipediaUrl}}><h4>{{i.title}}</h4></a>
+                                </div>
+                                <div class="col-md-4 pull-right">
+                                    <h4><span class="label label-default">Rank {{i.rank}}</span></h4>
+                                </div>
+                                </div>
+                                <p>{{i.summary}}</p>
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
 
         <!-- start of footer -->
         <div class="footerpad">
