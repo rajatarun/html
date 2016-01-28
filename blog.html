@@ -252,7 +252,7 @@
                             <div class="media-body">
                                 <div class="row">
                                 <div class="col-md-8">
-                                <a ng-href={{i.wikipediaUrl}}><h4>{{i.title}}</h4></a>
+                                <a ng-href={{i.wikipediaUrl|urlparse}}><h4>{{i.title}}</h4></a>
                                 </div>
                                 <div class="col-md-4 pull-right">
                                     <h4><span class="label label-default">Rank {{i.rank}}</span></h4>

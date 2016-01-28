@@ -232,6 +232,13 @@
 
 	});
 
+	app.filter("urlparse",function(){
+		return function(input) {
+			var url = "http://"+''+input; 
+    		return url;
+  		};
+
+	});
 	app.directive("mynav",function(){
 			return {
 				templateUrl:'my-nav.html'
@@ -338,6 +345,7 @@
 			}
 		}
 	});
+	
 	app.controller("CityController",function($scope,httpService){
 			$scope.city='';
 			$scope.call = function(){
