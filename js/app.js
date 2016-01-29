@@ -210,10 +210,9 @@
 					};
   	var usercomments = [];
 	var mywork = {
-		email:"rajatarun12@gmail.com",
-		linkedin:"https://www.linkedin.com/in/tarunraja1",
-		github:"https://github.com/rajatarun",
-		facebook:"https://www.facebook.com/studentconnect"
+		email:"tarun17170@gmail.com",
+		github:"https://github.com/rajatarun"
+		
 	};
 
 	app.controller("NewsController",function($scope,$http){
@@ -322,6 +321,7 @@
 		}
 		
 	});
+	// http Service factory 
 	app.factory("httpService",function($http){
 		return{
 			getCity:function(name){
