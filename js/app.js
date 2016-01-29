@@ -262,10 +262,12 @@
 
      $scope.reset();
    });
-	app.controller("VideoController",function($scope,$http){
-		$http.get("https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,player,statistics&chart=mostPopular&key=AIzaSyDjP5XAHXD4VfjbfpAzK5n3RB5sp0xl7KM")
-   		.success(function (response) {
-   			$scope.data = response;});
+	app.controller("VideoController",function(httpService,$scope,$http){
+		httpService.getVideos().then(function(response){
+				$scope.data=response;
+
+		});	
+		
    		this.product = "http://www.youtube.com/embed/";
 	});
 	app.controller("FontController",function(){
@@ -356,6 +358,11 @@
 				return $http.get(url).then(function(response){
     				return response.data;
 				});		
+			},
+			getVideos:function(){
+				return $http.get("https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,player,statistics&chart=mostPopular&key=AIzaSyDjP5XAHXD4VfjbfpAzK5n3RB5sp0xl7KM")
+   					.then(function (response) {
+   						return response.data});
 			}
 
 		}
