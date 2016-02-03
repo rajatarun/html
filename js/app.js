@@ -363,7 +363,19 @@
 				return $http.get("https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,player,statistics&chart=mostPopular&key=AIzaSyDjP5XAHXD4VfjbfpAzK5n3RB5sp0xl7KM")
    					.then(function (response) {
    						return response.data});
+			},
+			getMovies:function(moviename){
+				return $http.get("http://www.omdbapi.com/?s="+moviename+"&y=&plot=short&r=json")
+   					.then(function (response) {
+   						return response.data});
+			},
+			getMovie:function(movie){
+				return $http.get("http://www.omdbapi.com/?t="+movie+"&y=&plot=short&r=json")
+   					.then(function (response) {
+   						return response.data});
 			}
+
+
 
 		}
 	});
@@ -394,6 +406,21 @@
 				});		
 			}
 
+
+	});
+	app.controller("MovieController",function(httpService,$scope){
+		$scope.call=function(moviename){
+			
+			httpService.getMovies(moviename).then(function(response){
+				$scope.movie=response;
+				
+				});
+			httpService.getMovie($scope.movie.Search[0].Title).then(function(response){
+				$scope.movieg=response;
+				});
+
+		};
+		
 
 	});
 
