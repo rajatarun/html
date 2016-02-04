@@ -14,11 +14,11 @@
     }
     .heading.about {
         text-align: center;
-        background-color: #5E35B1
+        background-color: #4285F4
     }
     .heading.blog {
         text-align: center;
-        background-color: #558B2F
+        background-color: #4285F4
     }
     .active.blog a:hover{
     	background-color: #558B2F;	
@@ -32,7 +32,7 @@
     }
     .heading.contact {
         text-align: center;
-        background-color: #009688
+        background-color: #4285F4
     }
     .affix {
       top:0;
@@ -47,7 +47,7 @@
   }
     .heading.photo {
         text-align: center;
-        background-color: #795548
+        background-color: #4285F4
     }
     .backfoot {
         background-color: #242729 color: white
@@ -152,10 +152,10 @@
   	}
   	.heading.blog {
         text-align: center;
-        background-color: #558B2F
+        background-color: #4285F4
     }
     .active.blog a:hover{
-    	background-color: #558B2F;
+    	background-color: #4285F4;
     	color:white;	
     }
     .affix {
@@ -168,7 +168,7 @@
   }
     .heading.about {
         text-align: center;
-        background-color: #5E35B1
+        background-color: #4285F4
     }
     .label-danger {
         border-radius: 1em;
@@ -178,11 +178,11 @@
     }
     .heading.contact {
         text-align: center;
-        background-color: #009688
+        background-color: #4285F4
     }
     .heading.photo {
         text-align: center;
-        background-color: #795548
+        background-color: #4285F4
     }
     .backfoot {
         background-color: #242729;
@@ -289,7 +289,7 @@
   }
   .heading.blog {
         text-align: center;
-        background-color: #558B2F
+        background-color: #4285F4
     }
     .active.blog a:hover{
     	background-color: #558B2F;
@@ -305,7 +305,7 @@
   }
     .heading.about {
         text-align: center;
-        background-color: #5E35B1
+        background-color: #4285F4
     }
     .label-danger {
         border-radius: 1em;
@@ -315,11 +315,11 @@
     }
     .heading.contact {
         text-align: center;
-        background-color: #009688
+        background-color: #4285F4
     }
     .heading.photo {
         text-align: center;
-        background-color: #795548
+        background-color: #4285F4
     }
     .backfoot {
         background-color: #242729;
