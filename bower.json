@@ -15,5 +15,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "ng-pickadate": "^0.3.1"
+  }
 }
